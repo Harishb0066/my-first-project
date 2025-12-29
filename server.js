@@ -9,29 +9,31 @@ const path = require('path');
 const crypto = require('crypto');
 
 const app = express();
-app.use(express.json());
-app.use(cors());
 
-// Persistent database file
+app.use(cors({
+    origin: '*',
+    methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+    allowedHeaders: ['Content-Type', 'Authorization'],
+    credentials: true
+}));
+
+app.use(express.json());
+
 const DB_FILE = path.join(__dirname, 'database.json');
 
-// In-memory database
 let consumerProducts = {};
-let nextProductId = 11;
+let nextProductId = 1;
 let distributorToConsumerMap = {};
 
-// 🔐 BLOCKCHAIN: Create cryptographic hash
 function createHash(data) {
   return crypto.createHash('sha256').update(JSON.stringify(data)).digest('hex');
 }
 
-// 🔐 BLOCKCHAIN: Verify hash chain integrity
 function verifyHashChain(journey) {
   for (let i = 1; i < journey.length; i++) {
     const currentBlock = journey[i];
     const previousBlock = journey[i - 1];
     
-    // Check if previousHash matches the actual previous block's hash
     if (currentBlock.previousHash !== previousBlock.hash) {
       return {
         valid: false,
@@ -40,7 +42,6 @@ function verifyHashChain(journey) {
       };
     }
     
-    // Verify current block's hash is correct
     const blockData = {
       role: currentBlock.role,
       location: currentBlock.location,
@@ -62,7 +63,6 @@ function verifyHashChain(journey) {
   return { valid: true, message: "Hash chain verified - No tampering detected" };
 }
 
-// Load database from file
 function loadDatabase() {
   if (fs.existsSync(DB_FILE)) {
     try {
@@ -74,13 +74,15 @@ function loadDatabase() {
       console.log(`✅ Database loaded: ${Object.keys(consumerProducts).length} products restored`);
     } catch (err) {
       console.error('❌ Failed to load database, starting fresh');
+      consumerProducts = {};
+      nextProductId = 11;
+      distributorToConsumerMap = {};
     }
   } else {
     console.log('📄 No database file found, starting fresh');
   }
 }
 
-// Save database to file
 function saveDatabase() {
   const data = {
     consumerProducts,
@@ -94,12 +96,10 @@ function saveDatabase() {
   }
 }
 
-// Load on startup
 loadDatabase();
 
 console.log('🚀 Starting Consumer Backend...');
 
-// Image generator
 function getProductImage(productName) {
   const name = productName.toLowerCase();
   let keywords = name;
@@ -119,9 +119,10 @@ function getProductImage(productName) {
   return `https://source.unsplash.com/800x600/?${encodeURIComponent(keywords + ' high quality real photo')}`;
 }
 
-// Sync product from distributor
 app.post('/api/products/sync', async (req, res) => {
   try {
+    loadDatabase();
+
     const { distributorProductId, name, origin, status, timestamp } = req.body;
 
     console.log('📥 Sync request received:', { distributorProductId, name, origin, status });
@@ -156,49 +157,44 @@ app.post('/api/products/sync', async (req, res) => {
       image: foodImage
     };
 
-    // 🔐 BLOCKCHAIN: Create journey with cryptographic hash chaining
     const farmerTime = new Date(timestamp || Date.now());
-    const distributorTime = new Date(farmerTime.getTime() + (2 * 60 * 60 * 1000)); // +2 hours
-    const retailTime = new Date(distributorTime.getTime() + (8 * 60 * 60 * 1000)); // +8 hours
+    const distributorTime = new Date(farmerTime.getTime() + (2 * 60 * 60 * 1000));
+    const retailTime = new Date(distributorTime.getTime() + (8 * 60 * 60 * 1000));
 
-    // Block 1: Farmer (Genesis Block)
     const farmerBlock = {
       role: "Farmer",
       location: origin,
       timestamp: farmerTime.toISOString(),
       description: "Product harvested and registered",
-      previousHash: "0" // Genesis block
+      previousHash: "0"
     };
     farmerBlock.hash = createHash(farmerBlock);
 
-    // Block 2: Distributor (linked to Farmer)
     const distributorBlock = {
       role: "Distributor",
       location: "Distribution Center",
       timestamp: distributorTime.toISOString(),
       description: "Product received and verified",
-      previousHash: farmerBlock.hash // Linked to previous block
+      previousHash: farmerBlock.hash
     };
     distributorBlock.hash = createHash(distributorBlock);
 
-    // Block 3: Retailer (linked to Distributor)
     const retailBlock = {
       role: "Retailer",
       location: "Retail Store",
       timestamp: retailTime.toISOString(),
       description: "Product ready for consumer purchase",
-      previousHash: distributorBlock.hash // Linked to previous block
+      previousHash: distributorBlock.hash
     };
     retailBlock.hash = createHash(retailBlock);
 
     consumerProduct.journey = [farmerBlock, distributorBlock, retailBlock];
 
-    // 🔐 Verify hash chain immediately after creation
     const verification = verifyHashChain(consumerProduct.journey);
     console.log('🔐 Hash chain verification:', verification.message);
 
-    // ===================== CHANGED: QR now encodes a direct URL for universal scanning =====================
-    const publicUrl = `https://supply-chain-qr.onrender.com/product/${consumerProductId}`;  // ← REPLACE with your actual deployed domain
+    // FIXED: QR points to public product page
+    const publicUrl = `https://supply-chain-qr.onrender.com/product/${consumerProductId}`;
     const qrCodeUrl = await QRCode.toDataURL(publicUrl, { width: 300, margin: 2 });
     consumerProduct.qrCode = qrCodeUrl;
 
@@ -208,7 +204,6 @@ app.post('/api/products/sync', async (req, res) => {
     saveDatabase();
 
     console.log(`✅ Product synced: Consumer ID ${consumerProductId}`);
-    console.log(`🔗 Hash chain created with ${consumerProduct.journey.length} blocks`);
 
     res.json({
       success: true,
@@ -224,8 +219,17 @@ app.post('/api/products/sync', async (req, res) => {
   }
 });
 
-// QR Scan - Get product details with tamper detection
+app.get('/api/products', (req, res) => {
+  loadDatabase();
+  res.json({
+    success: true,
+    count: Object.keys(consumerProducts).length,
+    products: Object.values(consumerProducts)
+  });
+});
+
 app.get('/api/products/:id', (req, res) => {
+  loadDatabase();
   const productId = parseInt(req.params.id);
   const product = consumerProducts[productId];
 
@@ -238,9 +242,7 @@ app.get('/api/products/:id', (req, res) => {
 
   saveDatabase();
 
-  // 🔐 TAMPER DETECTION: Verify hash chain on every scan
   const tamperCheck = verifyHashChain(product.journey);
-
   const analysis = analyzeProduct(product);
 
   console.log(`🔍 Product ${productId} scanned (Total scans: ${product.scanCount})`);
@@ -255,17 +257,8 @@ app.get('/api/products/:id', (req, res) => {
   });
 });
 
-// Get all products
-app.get('/api/products', (req, res) => {
-  res.json({
-    success: true,
-    count: Object.keys(consumerProducts).length,
-    products: Object.values(consumerProducts)
-  });
-});
-
-// QR Code fetch
 app.get('/api/qrcode/:id', (req, res) => {
+  loadDatabase();
   const product = consumerProducts[req.params.id];
   if (!product || !product.qrCode) {
     return res.status(404).json({ error: 'QR code not found' });
@@ -273,8 +266,8 @@ app.get('/api/qrcode/:id', (req, res) => {
   res.json({ success: true, qrCode: product.qrCode });
 });
 
-// 🔐 NEW ENDPOINT: Manual tamper check
 app.get('/api/products/:id/verify', (req, res) => {
+  loadDatabase();
   const productId = parseInt(req.params.id);
   const product = consumerProducts[productId];
 
@@ -297,8 +290,53 @@ app.get('/api/products/:id/verify', (req, res) => {
   });
 });
 
-// ===================== NEW: Public HTML page for QR scanning (universal) =====================
+app.delete('/api/products/:id', (req, res) => {
+  loadDatabase();
+  try {
+    const productId = parseInt(req.params.id);
+    const product = consumerProducts[productId];
+
+    if (!product) {
+      return res.status(404).json({ 
+        success: false, 
+        error: 'Product not found' 
+      });
+    }
+
+    const productName = product.name;
+
+    delete consumerProducts[productId];
+
+    for (const distId in distributorToConsumerMap) {
+      if (distributorToConsumerMap[distId] === productId) {
+        delete distributorToConsumerMap[distId];
+        break;
+      }
+    }
+
+    saveDatabase();
+
+    console.log(`🗑️ Deleted product ID ${productId} (${productName})`);
+
+    return res.status(200).json({ 
+      success: true, 
+      message: 'Product deleted successfully',
+      deletedProductId: productId,
+      deletedProductName: productName
+    });
+
+  } catch (error) {
+    console.error('❌ Delete error:', error);
+    return res.status(500).json({ 
+      success: false, 
+      error: 'Failed to delete product',
+      details: error.message
+    });
+  }
+});
+
 app.get('/product/:id', (req, res) => {
+  loadDatabase(); // Critical fix for cold starts
   const productId = parseInt(req.params.id);
   const product = consumerProducts[productId];
 
@@ -374,17 +412,16 @@ app.get('/product/:id', (req, res) => {
   res.send(html);
 });
 
-// Health check
 app.get('/health', (req, res) => {
+  loadDatabase();
   res.json({
     status: 'healthy',
     productsCount: Object.keys(consumerProducts).length,
     time: new Date().toISOString(),
-    features: ['Hash Chaining', 'Tamper Detection', 'Cryptographic Verification']
+    features: ['Hash Chaining', 'Tamper Detection', 'Cryptographic Verification', 'CORS Enabled']
   });
 });
 
-// AI verification
 function analyzeProduct(product) {
   if (product.state !== 2) {
     return {
@@ -408,6 +445,7 @@ app.listen(PORT, () => {
 ║ 💾 Persistent DB enabled                  ║
 ║ 🔗 Blockchain Hash Chaining: ✅           ║
 ║ 🔐 Tamper Detection: ✅                   ║
+║ 🌐 CORS: ✅ (All origins)                 ║
 ╚═══════════════════════════════════════════╝
 `);
 });
