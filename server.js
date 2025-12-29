@@ -22,7 +22,7 @@ app.use(express.json());
 const DB_FILE = path.join(__dirname, 'database.json');
 
 let consumerProducts = {};
-let nextProductId = 1;
+let nextProductId = 1;  // Start from ID 1
 let distributorToConsumerMap = {};
 
 function createHash(data) {
@@ -69,13 +69,13 @@ function loadDatabase() {
       const data = fs.readFileSync(DB_FILE, 'utf8');
       const parsed = JSON.parse(data);
       consumerProducts = parsed.consumerProducts || {};
-      nextProductId = parsed.nextProductId || 11;
+      nextProductId = parsed.nextProductId || 1;  // Fallback to 1
       distributorToConsumerMap = parsed.distributorToConsumerMap || {};
       console.log(`✅ Database loaded: ${Object.keys(consumerProducts).length} products restored`);
     } catch (err) {
       console.error('❌ Failed to load database, starting fresh');
       consumerProducts = {};
-      nextProductId = 11;
+      nextProductId = 1;  // Reset to 1 on error
       distributorToConsumerMap = {};
     }
   } else {
@@ -127,6 +127,7 @@ app.post('/api/products/sync', async (req, res) => {
 
     console.log('📥 Sync request received:', { distributorProductId, name, origin, status });
 
+    // Check if already synced
     if (distributorToConsumerMap[distributorProductId]) {
       return res.status(400).json({
         error: 'Product already synced',
@@ -134,6 +135,15 @@ app.post('/api/products/sync', async (req, res) => {
       });
     }
 
+    // NEW: Limit maximum products to 100,000
+    if (nextProductId > 100000) {
+      return res.status(400).json({ 
+        success: false,
+        error: 'Maximum number of products reached (100,000). Cannot sync more.' 
+      });
+    }
+
+    // Create new ID
     const consumerProductId = nextProductId++;
 
     const batch = `${origin.substring(0,2).toUpperCase()}-${name.toUpperCase().replace(/\s+/g,'')}-${new Date().getFullYear()}-${Math.random().toString(36).substring(2,5).toUpperCase()}`;
@@ -193,7 +203,6 @@ app.post('/api/products/sync', async (req, res) => {
     const verification = verifyHashChain(consumerProduct.journey);
     console.log('🔐 Hash chain verification:', verification.message);
 
-    // FIXED: QR points to public product page
     const publicUrl = `https://supply-chain-qr.onrender.com/product/${consumerProductId}`;
     const qrCodeUrl = await QRCode.toDataURL(publicUrl, { width: 300, margin: 2 });
     consumerProduct.qrCode = qrCodeUrl;
@@ -219,6 +228,7 @@ app.post('/api/products/sync', async (req, res) => {
   }
 });
 
+// The rest of your routes remain exactly the same (no changes needed below)
 app.get('/api/products', (req, res) => {
   loadDatabase();
   res.json({
@@ -336,7 +346,7 @@ app.delete('/api/products/:id', (req, res) => {
 });
 
 app.get('/product/:id', (req, res) => {
-  loadDatabase(); // Critical fix for cold starts
+  loadDatabase();
   const productId = parseInt(req.params.id);
   const product = consumerProducts[productId];
 
