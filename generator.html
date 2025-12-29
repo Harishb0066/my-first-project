@@ -34,8 +34,11 @@ function generateQR() {
 
     document.getElementById("qrcode").innerHTML = "";
 
-    // Change: Encode a URL instead of JSON
-    const qrData = `https://your-app-domain.com/product/${pid}`;  // Replace with your public domain later
+    const qrData = JSON.stringify({
+        productId: parseInt(pid),
+        type: "consumer",
+        timestamp: Date.now()
+    });
 
     currentQRCode = new QRCode("qrcode", {
         text: qrData,
@@ -46,6 +49,7 @@ function generateQR() {
         correctLevel: QRCode.CorrectLevel.H
     });
 }
+
 function downloadQR() {
     const img = document.querySelector("#qrcode img");
     if (!img) {

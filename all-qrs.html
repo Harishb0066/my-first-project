@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products QR Codes</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        #controls {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        #search {
+            padding: 10px;
+            width: 300px;
+            font-size: 16px;
+        }
+        #refresh {
+            padding: 10px 20px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        #refresh:hover {
+            background: #45a049;
+        }
+        #loading {
+            text-align: center;
+            font-size: 18px;
+            color: #666;
+            margin: 50px 0;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.2s;
+            position: relative;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-title {
+            font-size: 1.4em;
+            margin: 10px 0;
+            color: #2c3e50;
+        }
+        .product-info {
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .verified { background: #d4edda; color: #155724; }
+        .pending { background: #fff3cd; color: #856404; }
+        .qr-container {
+            margin: 15px auto;
+            width: 180px;
+            height: 180px;
+        }
+        .actions {
+            margin-top: 10px;
+        }
+        .btn {
+            padding: 8px 16px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9em;
+        }
+        .btn-copy { background: #007bff; color: white; }
+        .btn-copy:hover { background: #0056b3; }
+        .btn-download { background: #28a745; color: white; }
+        .btn-download:hover { background: #218838; }
+        .btn-delete { background: #dc3545; color: white; }
+        .btn-delete:hover { background: #c82333; }
+        .btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .error { color: red; text-align: center; }
+        
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+        }
+        .modal-content {
+            background-color: white;
+            margin: 15% auto;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            text-align: center;
+        }
+        .modal-content h3 {
+            margin-top: 0;
+            color: #dc3545;
+        }
+        .modal-buttons {
+            margin-top: 20px;
+        }
+        .modal-buttons button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .btn-confirm {
+            background: #dc3545;
+            color: white;
+        }
+        .btn-confirm:hover {
+            background: #c82333;
+        }
+        .btn-cancel {
+            background: #6c757d;
+            color: white;
+        }
+        .btn-cancel:hover {
+            background: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Products QR Codes</h1>
+
+    <div id="controls">
+        <input type="text" id="search" placeholder="Search by name or ID...">
+        <button id="refresh">Refresh Now</button>
+    </div>
+
+    <div id="loading">Loading products...</div>
+    <div id="error" class="error" style="display:none;"></div>
+
+    <div class="product-grid" id="products"></div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <h3>⚠️ Delete Product?</h3>
+            <p id="deleteMessage"></p>
+            <p style="color: #666; font-size: 0.9em;">This action cannot be undone.</p>
+            <div class="modal-buttons">
+                <button class="btn-confirm" id="confirmDelete">Delete</button>
+                <button class="btn-cancel" id="cancelDelete">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Change this to your local server or deployed URL
+        // Auto-detect environment
+    const API_URL = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+    ? "http://127.0.0.1:3000/api/products"
+    : "https://supply-chain-qr.onrender.com/api/products";
+        // For production, use: "https://supply-chain-qr.onrender.com/api/products"
+        
+        const productsContainer = document.getElementById("products");
+        const loading = document.getElementById("loading");
+        const errorDiv = document.getElementById("error");
+        const searchInput = document.getElementById("search");
+        const refreshBtn = document.getElementById("refresh");
+        const deleteModal = document.getElementById("deleteModal");
+        const deleteMessage = document.getElementById("deleteMessage");
+        const confirmDeleteBtn = document.getElementById("confirmDelete");
+        const cancelDeleteBtn = document.getElementById("cancelDelete");
+
+        let allProducts = [];
+        let productToDelete = null;
+
+        function showError(message) {
+            loading.style.display = "none";
+            errorDiv.textContent = message;
+            errorDiv.style.display = "block";
+        }
+
+        function showDeleteModal(product) {
+            productToDelete = product;
+            deleteMessage.textContent = `Are you sure you want to delete "${product.name}" (ID: ${product.id})?`;
+            deleteModal.style.display = "block";
+        }
+
+        function hideDeleteModal() {
+            deleteModal.style.display = "none";
+            productToDelete = null;
+        }
+
+        async function deleteProduct(productId) {
+            try {
+                const response = await fetch(`${API_URL}/${productId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    }
+                });
+
+                // Check if response is JSON
+                const contentType = response.headers.get('content-type');
+                if (!contentType || !contentType.includes('application/json')) {
+                    throw new Error('Server returned non-JSON response. Check CORS settings or backend URL.');
+                }
+
+                const data = await response.json();
+
+                if (!response.ok) {
+                    throw new Error(data.error || `Server error: ${response.status}`);
+                }
+
+                if (!data.success) {
+                    throw new Error(data.error || 'Failed to delete product');
+                }
+
+                console.log(`✅ Product ${productId} deleted successfully`);
+                
+                // Remove from local array
+                allProducts = allProducts.filter(p => p.id !== productId);
+                
+                // Re-render products
+                renderProducts(allProducts);
+                
+                // Show success message
+                alert('Product deleted successfully!');
+                
+                return true;
+            } catch (err) {
+                console.error('Delete error:', err);
+                console.error('Full error details:', {
+                    productId,
+                    url: `${API_URL}/${productId}`,
+                    error: err
+                });
+                alert('Error deleting product: ' + err.message);
+                return false;
+            }
+        }
+
+        function renderProducts(products) {
+            productsContainer.innerHTML = "";
+            loading.style.display = "none";
+
+            if (products.length === 0) {
+                productsContainer.innerHTML = "<p class='error'>No products found.</p>";
+                return;
+            }
+
+            products.forEach(p => {
+                const card = document.createElement("div");
+                card.className = "product-card";
+                card.dataset.productId = p.id;
+
+                const title = document.createElement("div");
+                title.className = "product-title";
+                title.textContent = `${p.name} (ID: ${p.id})`;
+
+                const info = document.createElement("div");
+                info.className = "product-info";
+                info.innerHTML = `
+                    Batch: ${p.batch}<br>
+                    Origin: ${p.origin}<br>
+                    Harvest: ${p.harvestDate}<br>
+                    Stage: ${p.state === 2 ? "🏪 Retail" : "⏳ In Transit"}
+                `;
+
+                const statusBadge = document.createElement("span");
+                statusBadge.className = "status-badge";
+                statusBadge.textContent = p.state === 2 ? "Retail" : "In Transit";
+                statusBadge.classList.add(p.state === 2 ? "verified" : "pending");
+
+                const qrContainer = document.createElement("div");
+                qrContainer.className = "qr-container";
+                qrContainer.id = `qr-${p.id}`;
+
+                const actions = document.createElement("div");
+                actions.className = "actions";
+
+                const copyBtn = document.createElement("button");
+                copyBtn.className = "btn btn-copy";
+                copyBtn.textContent = "Copy Link";
+                copyBtn.onclick = () => {
+                    navigator.clipboard.writeText(`https://supply-chain-qr.onrender.com/product/${p.id}`);
+                    alert("Link copied!");
+                };
+
+                const downloadBtn = document.createElement("button");
+                downloadBtn.className = "btn btn-download";
+                downloadBtn.textContent = "Download QR";
+                downloadBtn.onclick = () => {
+                    const qrDiv = document.getElementById(`qr-${p.id}`);
+                    const img = qrDiv.querySelector("img");
+                    if (img) {
+                        const a = document.createElement("a");
+                        a.href = img.src;
+                        a.download = `QR_${p.name.replace(/\s+/g, '_')}_ID${p.id}.png`;
+                        a.click();
+                    }
+                };
+
+                const deleteBtn = document.createElement("button");
+                deleteBtn.className = "btn btn-delete";
+                deleteBtn.textContent = "Delete";
+                deleteBtn.onclick = () => showDeleteModal(p);
+
+                actions.appendChild(copyBtn);
+                actions.appendChild(downloadBtn);
+                actions.appendChild(deleteBtn);
+
+                card.appendChild(title);
+                card.appendChild(info);
+                card.appendChild(statusBadge);
+                card.appendChild(qrContainer);
+                card.appendChild(actions);
+
+                productsContainer.appendChild(card);
+
+                // Generate QR
+                new QRCode(qrContainer, {
+                    text: `https://supply-chain-qr.onrender.com/product/${p.id}`,
+                    width: 180,
+                    height: 180,
+                    colorDark: "#000000",
+                    colorLight: "#ffffff",
+                    correctLevel: QRCode.CorrectLevel.H
+                });
+            });
+        }
+
+        function loadProducts() {
+            loading.style.display = "block";
+            errorDiv.style.display = "none";
+
+            fetch(API_URL)
+                .then(res => {
+                    if (!res.ok) throw new Error("Failed to load products");
+                    return res.json();
+                })
+                .then(data => {
+                    if (!data.success) throw new Error(data.error || "Unknown error");
+                    allProducts = data.products || [];
+                    renderProducts(allProducts);
+                })
+                .catch(err => {
+                    showError("Error loading products: " + err.message);
+                });
+        }
+
+        // Search filter
+        searchInput.addEventListener("input", (e) => {
+            const term = e.target.value.toLowerCase();
+            const filtered = allProducts.filter(p =>
+                p.name.toLowerCase().includes(term) || 
+                String(p.id).includes(term)
+            );
+            renderProducts(filtered);
+        });
+
+        // Refresh button
+        refreshBtn.addEventListener("click", loadProducts);
+
+        // Modal event listeners
+        confirmDeleteBtn.addEventListener("click", async () => {
+            if (productToDelete) {
+                confirmDeleteBtn.disabled = true;
+                confirmDeleteBtn.textContent = "Deleting...";
+                
+                const success = await deleteProduct(productToDelete.id);
+                
+                confirmDeleteBtn.disabled = false;
+                confirmDeleteBtn.textContent = "Delete";
+                
+                hideDeleteModal();
+            }
+        });
+
+        cancelDeleteBtn.addEventListener("click", hideDeleteModal);
+
+        // Close modal when clicking outside
+        deleteModal.addEventListener("click", (e) => {
+            if (e.target === deleteModal) {
+                hideDeleteModal();
+            }
+        });
+
+        // Auto-refresh every 30 seconds
+        setInterval(loadProducts, 30000);
+
+        // Initial load
+        loadProducts();
+    </script>
+</body>
+</html>
