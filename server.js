@@ -1,4 +1,4 @@
-// server.js - Consumer Backend with Blockchain Hash Chaining
+// server.js - Consumer Backend with Blockchain Hash Chaining (FIXED)
 // Run: node server.js
 
 const express = require('express');
@@ -22,7 +22,7 @@ app.use(express.json());
 const DB_FILE = path.join(__dirname, 'database.json');
 
 let consumerProducts = {};
-let nextProductId = 1;  // Start from ID 1
+let nextProductId = 1;
 let distributorToConsumerMap = {};
 
 function createHash(data) {
@@ -69,13 +69,21 @@ function loadDatabase() {
       const data = fs.readFileSync(DB_FILE, 'utf8');
       const parsed = JSON.parse(data);
       consumerProducts = parsed.consumerProducts || {};
-      nextProductId = parsed.nextProductId || 1;  // Fallback to 1
+      nextProductId = parsed.nextProductId || 1;
       distributorToConsumerMap = parsed.distributorToConsumerMap || {};
+      
+      // FIX: Recalculate nextProductId based on existing products
+      const existingIds = Object.keys(consumerProducts).map(id => parseInt(id));
+      if (existingIds.length > 0) {
+        nextProductId = Math.max(...existingIds) + 1;
+      }
+      
       console.log(`✅ Database loaded: ${Object.keys(consumerProducts).length} products restored`);
+      console.log(`📊 Next Product ID will be: ${nextProductId}`);
     } catch (err) {
       console.error('❌ Failed to load database, starting fresh');
       consumerProducts = {};
-      nextProductId = 1;  // Reset to 1 on error
+      nextProductId = 1;
       distributorToConsumerMap = {};
     }
   } else {
@@ -91,6 +99,7 @@ function saveDatabase() {
   };
   try {
     fs.writeFileSync(DB_FILE, JSON.stringify(data, null, 2));
+    console.log(`💾 Database saved: ${Object.keys(consumerProducts).length} products, Next ID: ${nextProductId}`);
   } catch (err) {
     console.error('❌ Failed to save database:', err);
   }
@@ -121,7 +130,7 @@ function getProductImage(productName) {
 
 app.post('/api/products/sync', async (req, res) => {
   try {
-    loadDatabase();
+    loadDatabase(); // Always reload to get latest state
 
     const { distributorProductId, name, origin, status, timestamp } = req.body;
 
@@ -135,7 +144,7 @@ app.post('/api/products/sync', async (req, res) => {
       });
     }
 
-    // NEW: Limit maximum products to 100,000
+    // Limit maximum products to 100,000
     if (nextProductId > 100000) {
       return res.status(400).json({ 
         success: false,
@@ -228,7 +237,6 @@ app.post('/api/products/sync', async (req, res) => {
   }
 });
 
-// The rest of your routes remain exactly the same (no changes needed below)
 app.get('/api/products', (req, res) => {
   loadDatabase();
   res.json({
@@ -300,8 +308,10 @@ app.get('/api/products/:id/verify', (req, res) => {
   });
 });
 
+// FIX: Improved delete endpoint
 app.delete('/api/products/:id', (req, res) => {
-  loadDatabase();
+  loadDatabase(); // ✅ FIX: Reload database first
+  
   try {
     const productId = parseInt(req.params.id);
     const product = consumerProducts[productId];
@@ -315,8 +325,10 @@ app.delete('/api/products/:id', (req, res) => {
 
     const productName = product.name;
 
+    // Delete product
     delete consumerProducts[productId];
 
+    // Remove from distributor mapping
     for (const distId in distributorToConsumerMap) {
       if (distributorToConsumerMap[distId] === productId) {
         delete distributorToConsumerMap[distId];
@@ -324,15 +336,25 @@ app.delete('/api/products/:id', (req, res) => {
       }
     }
 
+    // ✅ FIX: Recalculate nextProductId after deletion
+    const remainingIds = Object.keys(consumerProducts).map(id => parseInt(id));
+    if (remainingIds.length > 0) {
+      nextProductId = Math.max(...remainingIds) + 1;
+    } else {
+      nextProductId = 1; // Reset to 1 if no products remain
+    }
+
     saveDatabase();
 
     console.log(`🗑️ Deleted product ID ${productId} (${productName})`);
+    console.log(`📊 Next Product ID reset to: ${nextProductId}`);
 
     return res.status(200).json({ 
       success: true, 
       message: 'Product deleted successfully',
       deletedProductId: productId,
-      deletedProductName: productName
+      deletedProductName: productName,
+      nextProductId: nextProductId // Return for debugging
     });
 
   } catch (error) {
@@ -355,7 +377,8 @@ app.get('/product/:id', (req, res) => {
       <html>
         <body style="font-family: Arial; text-align: center; padding: 50px;">
           <h2>Product Not Found</h2>
-          <p>Invalid Product ID</p>
+          <p>Invalid Product ID: ${productId}</p>
+          <p style="color: #666;">This product may have been deleted or never existed.</p>
         </body>
       </html>
     `);
@@ -427,6 +450,7 @@ app.get('/health', (req, res) => {
   res.json({
     status: 'healthy',
     productsCount: Object.keys(consumerProducts).length,
+    nextProductId: nextProductId,
     time: new Date().toISOString(),
     features: ['Hash Chaining', 'Tamper Detection', 'Cryptographic Verification', 'CORS Enabled']
   });
@@ -448,6 +472,22 @@ function analyzeProduct(product) {
 }
 
 const PORT = process.env.PORT || 3000;
+// Reset endpoint for development
+app.post('/api/reset', (req, res) => {
+  consumerProducts = {};
+  nextProductId = 1;
+  distributorToConsumerMap = {};
+  saveDatabase();
+  
+  console.log('🔄 Database reset! All products deleted, ID counter reset to 1');
+  
+  res.json({
+    success: true,
+    message: 'Database reset successfully',
+    nextProductId: 1
+  });
+});
+
 app.listen(PORT, () => {
   console.log(`
 ╔═══════════════════════════════════════════╗
@@ -456,6 +496,7 @@ app.listen(PORT, () => {
 ║ 🔗 Blockchain Hash Chaining: ✅           ║
 ║ 🔐 Tamper Detection: ✅                   ║
 ║ 🌐 CORS: ✅ (All origins)                 ║
+║ 📊 Next Product ID: ${nextProductId}                     ║
 ╚═══════════════════════════════════════════╝
 `);
 });
