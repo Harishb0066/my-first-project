@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Food Supply Chain Verification</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Food Supply Chain Verification</h2>
+
+<div class="container">
+    <div class="card">
+        <h3>Scan Product QR</h3>
+        <div id="reader" style="width:300px;margin:auto;"></div>
+    </div>
+
+    <div class="card" id="result">
+        <p>Scan a QR code to view product details</p>
+    </div>
+</div>
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+<script>
+function onScanSuccess(decodedText) {
+    try {
+        const qrData = JSON.parse(decodedText);
+        const productId = qrData.productId;
+
+        fetch(`http://localhost:3000/api/products/${productId}`)
+            .then(res => res.json())
+            .then(data => {
+                if (!data.success) {
+                    document.getElementById("result").innerHTML = "<p>❌ Product not found</p>";
+                    return;
+                }
+
+                const product = data.product;
+                const analysis = data.analysis;
+
+                let html = `
+                    <h3>${analysis.status}</h3>
+                    <h2>🛒 ${product.name}</h2>
+                    <p><b>Origin:</b> ${product.origin}</p>
+                    <p><b>Batch ID:</b> ${product.batch}</p>
+                    <p><b>Harvest Date:</b> ${product.harvestDate}</p>
+                    <p><b>Current Stage:</b> ${product.state === 2 ? "🏪 Retail" : "⏳ In Transit"}</p>
+                    <p><b>Description:</b><br>${product.description}</p>
+                    <p>${analysis.message}</p>
+                    <p><b>Scanned:</b> ${new Date().toLocaleString()}</p>
+
+                    <hr>
+                `;
+
+                /* ================= NEW FUNCTIONALITY ================= */
+                /* 🔥 FULL PRODUCT JOURNEY WITH TIMESTAMPS 🔥 */
+
+                if (data.journey && data.journey.length > 0) {
+                    html += `<h3>📜 Product Journey</h3><ul style="line-height:1.8">`;
+
+                    data.journey.forEach(step => {
+                        html += `
+                            <li>
+                                <b>${step.role}</b> – ${step.location}<br>
+                                🕒 ${new Date(step.timestamp).toLocaleString()}
+                            </li>
+                        `;
+                    });
+
+                    html += `</ul>`;
+                }
+                /* ===================================================== */
+
+                html += `<p>🤖 AI-powered verification</p>`;
+
+                document.getElementById("result").innerHTML = html;
+            });
+
+    } catch (err) {
+        document.getElementById("result").innerHTML = "<p>❌ Invalid QR Code</p>";
+    }
+}
+
+new Html5QrcodeScanner(
+    "reader",
+    { fps: 10, qrbox: 250 }
+).render(onScanSuccess);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Retail QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+<h2>Retail QR Code Generator</h2>
+
+<div class="container">
+    <div class="card">
+        <p><b>Enter Consumer Product ID</b> (from distributor sync)</p>
+        <input type="number" id="pid" placeholder="e.g. 12" value="12">
+        <br><br>
+        <button onclick="generateQR()">Generate QR Code</button>
+        <div id="qrcode" style="margin-top:20px; text-align:center;"></div>
+        <br>
+        <button onclick="downloadQR()">Download QR Code</button>
+    </div>
+</div>
+
+<script>
+let currentQRCode = null;
+
+function generateQR() {
+    const pid = document.getElementById("pid").value.trim();
+    if (!pid || isNaN(pid)) {
+        alert("Please enter a valid Product ID");
+        return;
+    }
+
+    document.getElementById("qrcode").innerHTML = "";
+
+    // Change: Encode a URL instead of JSON
+    const qrData = `https://your-app-domain.com/product/${pid}`;  // Replace with your public domain later
+
+    currentQRCode = new QRCode("qrcode", {
+        text: qrData,
+        width: 256,
+        height: 256,
+        colorDark: "#000000",
+        colorLight: "#ffffff",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+}
+function downloadQR() {
+    const img = document.querySelector("#qrcode img");
+    if (!img) {
+        alert("Generate QR code first!");
+        return;
+    }
+
+    const pid = document.getElementById("pid").value;
+    const link = document.createElement("a");
+    link.href = img.src;
+    link.download = `QR_Product_${pid}.png`;
+    link.click();
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1668 @@
+{
+  "consumerProducts": {
+    "11": {
+      "id": 11,
+      "name": "Cherry",
+      "origin": "Kashmir",
+      "batch": "KA-CHERRY-2025-FBH",
+      "harvestDate": "23 Dec 2025",
+      "description": "Cherry sourced from Kashmir via verified supply chain",
+      "state": 2,
+      "distributorId": 14,
+      "syncedAt": "2025-12-22T23:28:36.645Z",
+      "scanCount": 22,
+      "image": "https://source.unsplash.com/800x600/?cherry%20fresh%20natural%20high%20quality%20real%20photo",
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T14:03:44.443Z"
+    },
+    "12": {
+      "id": 12,
+      "name": "Papaya",
+      "origin": "Tamil Nadu",
+      "batch": "TA-PAPAYA-2025-0OA",
+      "harvestDate": "23 Dec 2025",
+      "description": "Papaya sourced from Tamil Nadu via verified supply chain",
+      "state": 2,
+      "distributorId": 15,
+      "syncedAt": "2025-12-23T00:15:24.734Z",
+      "scanCount": 13,
+      "image": "https://source.unsplash.com/800x600/?fresh%20papaya%20fruit%20high%20quality%20real%20photo",
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-28T15:42:36.678Z"
+    },
+    "13": {
+      "id": 13,
+      "name": "Orange",
+      "origin": "Kolkata",
+      "batch": "KO-ORANGE-2025-800",
+      "harvestDate": "23 Dec 2025",
+      "description": "Orange sourced from Kolkata via verified supply chain",
+      "state": 2,
+      "distributorId": 16,
+      "syncedAt": "2025-12-23T00:25:15.459Z",
+      "scanCount": 8,
+      "image": "https://source.unsplash.com/800x600/?fresh%20orange%20fruit%20high%20quality%20real%20photo",
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T10:21:40.290Z"
+    },
+    "14": {
+      "id": 14,
+      "name": "Spices",
+      "origin": "Kerala",
+      "batch": "KE-SPICES-2025-TMH",
+      "harvestDate": "23 Dec 2025",
+      "description": "Spices sourced from Kerala via verified supply chain",
+      "state": 2,
+      "distributorId": 17,
+      "syncedAt": "2025-12-23T00:34:22.622Z",
+      "scanCount": 3,
+      "image": "https://source.unsplash.com/800x600/?spices%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Kerala",
+          "timestamp": "2025-12-23T00:34:19.000Z",
+          "description": "Product harvested and registered"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T02:34:19.000Z",
+          "description": "Product received and verified"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T10:34:19.000Z",
+          "description": "Product ready for consumer purchase"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T03:17:35.604Z"
+    },
+    "15": {
+      "id": 15,
+      "name": "Potato",
+      "origin": "Nepal",
+      "batch": "NE-POTATO-2025-KSN",
+      "harvestDate": "23 Dec 2025",
+      "description": "Potato sourced from Nepal via verified supply chain",
+      "state": 1,
+      "distributorId": 18,
+      "syncedAt": "2025-12-23T01:04:04.227Z",
+      "scanCount": 4,
+      "image": "https://source.unsplash.com/800x600/?potato%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Nepal",
+          "timestamp": "2025-12-23T01:03:55.000Z",
+          "description": "Product harvested and registered"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T03:03:55.000Z",
+          "description": "Product received and verified"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T11:03:55.000Z",
+          "description": "Product ready for consumer purchase"
+        }
+      ],
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAjoSURBVO3BwXEkSRIEQfOQ5p9lv6Eg8UjUVgfOVNN/kKQFBklaYpCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+/IIk/GVt+UkSvllbTpLw7dpykoSTtpwk4Ult+UkS/rK23BgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYkP/4G2fLMk3GrLSRKe1JYbbbmRhJ+05SQJJ0k4actJEk7aciMJT2vLN0vCkwZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDF0jCk9ry/y4JJ205ScJJW57WlpMk3EjCSVtO2vK2JDypLW8aJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD/oVSbjRlpMknCThpC0nSXhaEt7UlpMk6LsNkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEB/0JbXlSW2615UYS3pSEG23RnUGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwBdry17XlRltuJOGkLTeS8LS2nCThRltuJOFtbfnLBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4sN/IAk6S8JJW06ScNKWkySctOVWW06S8KYknLTlbUn4fzZI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hLpP+haEk7a8s2S8La2nCThSW05ScJJW/SsQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ+/IAknbXlSEk7acpKEtyXhpC0nSThpy0lbbiThVhK+WVtuJOHbteVGEk7acmOQpCUGSVpikKQlBklaYpCkJQZJWmKQpCXSf3hYEt7UlhtJ+ElbTpJw0pYnJeFtbXlTEr5dW06ScNKWG0m40ZYnDZK0xCBJSwyStMQgSUsMkrTEIElLDJK0xIdfkIQbbXlSEm605SdJOGnLSRJO2nKShJO23EjCSVt+koSTtjypLSdJuNGWkyTcastJEp7UljcNkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEh/9AW06ScNKWJ7XlJAk/acuNtpwk4aQtN5Jw0paTJHy7JNxoy3ZteVISTtpyY5CkJQZJWmKQpCUGSVpikKQlBklaYpCkJT78B5Jw0pYbSThpy0kSTtrykyTcaMtJW24k4UltuZWEJ7XlTW35SRJO2nIjCSdtOUnCmwZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDL2jLjSSctOWkLTfacpKEn7TlSUk4acuNttxIwnZJuNGWW205ScJJW06S8KS2PGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+LJCEk7acJOFGW36ShBtteVJbTpJw0pZbbbmRhBtJOGnLSRJOknDSllttOUnCk9rypkGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwBdpyIwk32nKShKcl4UYSTtrypLb8JAknbbnRlpMkvCkJt9py0paTJNxIwo223BgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYkPvyAJJ205ScKT2nKShFtteVMSTpJw0paTJDwtCSdt2awtP0nCSRJutOVJbXnSIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xIdf0JY3teUkCSdtuZWEN7XlJAlva8tJEp7Ulm/XlpMknLTlRhK+2SBJSwyStMQgSUsMkrTEIElLDJK0xCBJS6T/8LAknLTlJAl/XVvelIRv15aTJLypLU9LwpPa8s0GSVpikKQlBklaYpCkJQZJWmKQpCUGSVriwy9IwklbTpLwpLa8LQlPSsJJW07a8rYk3GjLSRKelISnteUkCSdteVISTtpyY5CkJQZJWmKQpCUGSVpikKQlBklaYpCkJT78gracJOGkLW9Kwq22vKktJ0k4actJEp7WlhtJuNGWG0k4actPkvCkJJy05SQJbxokaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYn0Hy4lYbO23ErCSVtOkvCktmyXhJO2nCThSW15WhJO2nIjCSdtedMgSUsMkrTEIElLDJK0xCBJSwyStMQgSUuk//DHJeFGW96WhBttOUnCjba8LQk32nKShKe15UYS3tSWJw2StMQgSUsMkrTEIElLDJK0xCBJSwyStET6D18uCTfaciMJP2nLSRJutOUkCTfacpKEp7XlSUl4UlueloSTtrwpCSdtuTFI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hIffkESntSWJyXhpC1Pa8s3a8utJNxIwklbbrTlRhLeloQbbbnRlicNkrTEIElLDJK0xCBJSwyStMQgSUsMkrRE+g+6loQ3teUkCSdtOUnCrbacJOGkLd8sCSdteVoSTtpykoSTtrxpkKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4sMvSMJf1pZvl4QbSbjRlp8k4U1JOGnL25Jw0pYbSbiRhJO2PGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+/Afa8s2ScKstN5LwpLacJOGkLU9ry40knLTlJAknbXlaW57UlhtJeNMgSUsMkrTEIElLDJK0xCBJSwyStMQgSUt8+AJJeFJbnpaEN7XlJAknbTlJwklbftKWkyQ8KQknbXlSErZry0kSTtpyY5CkJQZJWmKQpCUGSVpikKQlBklaYpCkJT7oV7TlJAk32nKShCe15SQJP2nLjbacJOGkLSdJeFJbfpKEk7acJOEkCU9qy5MGSVpikKQlBklaYpCkJQZJWmKQpCUGSVrig75CW2605SQJJ0k4acvT2nKShJO2bNeWN7Xlmw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMSHL9CWv64tJ0m40ZY3teUnSbjRlhtJeFMSftKWG235ywZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDfyAJf10STtpy0pYbSThpy40knLTlVltOknDSlu2S8KS2PCkJJ225MUjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEuk/SNICgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLfE/CCMLTqVjejoAAAAASUVORK5CYII=",
+      "lastScanned": "2025-12-25T16:18:39.281Z"
+    },
+    "16": {
+      "id": 16,
+      "name": "Cucumber",
+      "origin": "England",
+      "batch": "EN-CUCUMBER-2025-017",
+      "harvestDate": "23 Dec 2025",
+      "description": "Cucumber sourced from England via verified supply chain",
+      "state": 2,
+      "distributorId": 19,
+      "syncedAt": "2025-12-23T01:06:37.842Z",
+      "scanCount": 3,
+      "image": "https://source.unsplash.com/800x600/?cucumber%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "England",
+          "timestamp": "2025-12-23T01:06:23.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "6974af326e17c280e08d4c720edf99250fe9ee2cfc1eb8656b36c119b6644a1e"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T03:06:23.000Z",
+          "description": "Product received and verified",
+          "previousHash": "6974af326e17c280e08d4c720edf99250fe9ee2cfc1eb8656b36c119b6644a1e",
+          "hash": "7380750a5ae458670976ee36c71d7043694006001ec8817cee07b09703f307a4"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T11:06:23.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "7380750a5ae458670976ee36c71d7043694006001ec8817cee07b09703f307a4",
+          "hash": "cab34b95fd81643fc97b13e3169b18e95f5604874d685d7b7aa7e218ddd6cfea"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T14:03:51.467Z"
+    },
+    "17": {
+      "id": 17,
+      "name": "Ragi",
+      "origin": "Tamil Nadu",
+      "batch": "TA-RAGI-2025-IJM",
+      "harvestDate": "23 Dec 2025",
+      "description": "Ragi sourced from Tamil Nadu via verified supply chain",
+      "state": 2,
+      "distributorId": 21,
+      "syncedAt": "2025-12-23T01:39:53.058Z",
+      "scanCount": 1,
+      "image": "https://source.unsplash.com/800x600/?ragi%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Tamil Nadu",
+          "timestamp": "2025-12-23T01:39:49.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "029521d18602c9196629294bac9853ecd6164af4f7074ea3b176cdd82e7001e8"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T03:39:49.000Z",
+          "description": "Product received and verified",
+          "previousHash": "029521d18602c9196629294bac9853ecd6164af4f7074ea3b176cdd82e7001e8",
+          "hash": "6a3ae3a2a191ad1558abdaa7f82217742d81fdd4b9d61f138f8949f324648aaf"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T11:39:49.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "6a3ae3a2a191ad1558abdaa7f82217742d81fdd4b9d61f138f8949f324648aaf",
+          "hash": "f03b96e4c747cb782a35f639e8408fbba67373649f8e05bc3685b7d78ff10527"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:59:46.196Z"
+    },
+    "18": {
+      "id": 18,
+      "name": "Jaggery",
+      "origin": "Uttra Pradesh",
+      "batch": "UT-JAGGERY-2025-4HC",
+      "harvestDate": "23 Dec 2025",
+      "description": "Jaggery sourced from Uttra Pradesh via verified supply chain",
+      "state": 2,
+      "distributorId": 22,
+      "syncedAt": "2025-12-23T01:50:04.945Z",
+      "scanCount": 1,
+      "image": "https://source.unsplash.com/800x600/?jaggery%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Uttra Pradesh",
+          "timestamp": "2025-12-23T01:50:01.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "199959d9a670d3bcd5591e4afc61981253f17186c18e498d7e68de7d11de9755"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T03:50:01.000Z",
+          "description": "Product received and verified",
+          "previousHash": "199959d9a670d3bcd5591e4afc61981253f17186c18e498d7e68de7d11de9755",
+          "hash": "0602516ae1fb6fb1a47b47876b97356b964a8f4755024a2be9e140c24905eace"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T11:50:01.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "0602516ae1fb6fb1a47b47876b97356b964a8f4755024a2be9e140c24905eace",
+          "hash": "fcb7544e0ff4ef404df59472f5f2c68b49c638f3f75e1a1436a2418eed2927f3"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:01:46.358Z"
+    },
+    "19": {
+      "id": 19,
+      "name": "Pure Honey",
+      "origin": "Himalayas, India",
+      "batch": "HI-PUREHONEY-2025-42Y",
+      "harvestDate": "23 Dec 2025",
+      "description": "Pure Honey sourced from Himalayas, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1019,
+      "syncedAt": "2025-12-23T01:51:58.561Z",
+      "scanCount": 9,
+      "image": "https://source.unsplash.com/800x600/?honey%20jar%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Himalayas, India",
+          "timestamp": "2025-12-23T01:51:58.561Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "112cc0801205597cb19e9aa91f21a99c6dddeb284e42e812d6cbdbec354f1745"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T03:51:58.561Z",
+          "description": "Product received and verified",
+          "previousHash": "112cc0801205597cb19e9aa91f21a99c6dddeb284e42e812d6cbdbec354f1745",
+          "hash": "1bf03362ed40de72f17159e8bd59b2777a3c195b6aae6a79cb7a86b686c56d9f"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T11:51:58.561Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "1bf03362ed40de72f17159e8bd59b2777a3c195b6aae6a79cb7a86b686c56d9f",
+          "hash": "87a973e11b87b078f70426f07f113de6d79b73d94d7cf9b97e647ec8cfcf23a0"
+        }
+      ],
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAiuSURBVO3BwZEcSRIEQfOQ5p9lv2Xgch6JQnUMTDX9D5K0wCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEhz8gCb9ZW24l4UZbTpJwoy03kvCTtpwk4UZbTpLwprb8JAm/WVtuDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xIe/oC3fLAlva8uNtpwk4SQJ364tJ0k4acuTkvC0tnyzJDxpkKQlBklaYpCkJQZJWmKQpCUGSVpikKQlPnyBJDypLU9LwklbTpJwoy032nKShO2ScNKWkyR8uyQ8qS1vGiRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ/6K5Jwoy032nKShLe15UZb9LsNkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEB/0VbTlJwkkSntSWkySctOVpSdC/bZCkJQZJWmKQpCUGSVpikKQlBklaYpCkJT58gbb8dkl4U1tOknAjCU9ry0kSbrTlRhLe1pbfbJCkJQZJWmKQpCUGSVpikKQlBklaYpCkJT78BUn417XlJAknbTlJwpPacpKEn7TlJAlPastJEk7a8rYk/MsGSVpikKQlBklaYpCkJQZJWmKQpCUGSVriwx/QFt1py422PCkJJ235dkn4dm3R/zdI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC2R/odLSThpy0kSvllbtkvCb9eW7ZLwzdrypkGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwB7TlJAknbdkuCSdteVNbnpSEn7TlRhJOknDSlpMkPKktt9rypCTcSMJJW24MkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEhz8gCU9KwklbTpJwoy3fLgknbbmRhKcl4aQtT2rLjSScJOEnbXlTW2605UmDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC3x4Q9oy2ZteVoSbrTlSUk4act2SThpy0kStkvCjbacJOGkLTcGSVpikKQlBklaYpCkJQZJWmKQpCUGSVriwx+QhBttuZGEk7acJOGkLW9LwklbbrTlJAknbXlbEp7UlhtJuJWEJ7XlRlueNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEh9EW06ScKstJ0k4acuNJDwpCU9Lwo22nCThRltuJeGkLTeS8KQknLTlxiBJSwyStMQgSUsMkrTEIElLDJK0xCBJS6T/4WFJ+Ne15UYSbrTlJAknbbmVhBttOUnCjbb865Jw0pY3DZK0xCBJSwyStMQgSUsMkrTEIElLDJK0xIcv0JYbSThpy40k/KQtT2rLSRLelISftOUkCW9KwklbbiThVltOknDSlhtJuNGWG4MkLTFI0hKDJC0xSNISgyQtMUjSEoMkLfHhD0jCSVtuJOFGEt6WhJO2vKktT0vCjSTcaMuNJDytLW9qy40kPGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVriw1+QhJO2PKktOkvCSVtuteUkCU9Kwklb3paEk7actOVGEk7a8qZBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpZI/8PLknDSlhtJeFtbNkvCSVveloQbbbmRhJO23ErCSVtuJOGkLW8aJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD39AEm605UYSTtrytCScJOFNbTlJwklbTpJwqy032nKShCe15SQJt9pyIwlPSsJJW24MkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEhy+QhCcl4WltOUnCSVtuJOG3S8KNtjwpCbfacpKEJ7XlRlueNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEh++QFt+u7acJOFGW06ScNKWkySctOVpbTlJwo0k3GjLSRJ+koSTtjwpCU9qy41BkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpb48Be05SQJT2rLSRJO2nIrCTfacpKEk7Y8KQlPa8uNJNxoy9Pa8qa2nCThpC1PGiRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ8LtOUkCTfacpKEn7TlpC03knAjCSdtudGWW0m40ZaTJJy05UYSTtpyKwlvastJEk7acmOQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+LJCEk7bcSMJJW36ShJO2nCThpC1PSsLTknDSlhtJOGnLm5Lw7dpykoQ3DZK0xCBJSwyStMQgSUsMkrTEIElLDJK0xIc/oC032vKmtjwtCSdtOUnCSVue1JaTJPykLSdJeFISTtrypLY8LQknbTlJwjcbJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKW+PAHJOE3a8tP2nKShJMkPCkJN5LwtLY8KQknSXhbEk7a8qS2nCThpC1PGiRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ9/QVu+WRJuJeGkLSdJ+GZtOUnCrSSctOUkCSdtuZGEp7XlSUnYbJCkJQZJWmKQpCUGSVpikKQlBklaYpCkJT58gSQ8qS1vS8KTkvCmtrytLU9qy0kSTpLwtrbcSMKbBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4oP+CW05ScJJEm615UYSTtpykoRv15aTJNxIwo22nCThpC03BklaYpCkJQZJWmKQpCUGSVpikKQlBkla4oP+irZ8s7Y8LQlvast2bXlSEm605UmDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC3x4Qu0Zbu2nCThSW25kYSTtpwk4SdteVMSTtrypCT8pC03kvCbDZK0xCBJSwyStMQgSUsMkrTEIElLDJK0xIe/IAm/XRJO2nIjCSdJOGnLSVtutOUnSThpy40knLTlJAlPasvb2nIjCSdtedIgSUsMkrTEIElLDJK0xCBJSwyStMQgSUuk/0GSFhgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJ/wHaGsKIyS5MwQAAAABJRU5ErkJggg==",
+      "lastScanned": "2025-12-23T02:59:43.349Z"
+    },
+    "20": {
+      "id": 20,
+      "name": "Alphonso Mango",
+      "origin": "Ratnagiri, India",
+      "batch": "RA-ALPHONSOMANGO-2025-66K",
+      "harvestDate": "22 Dec 2025",
+      "description": "Alphonso Mango sourced from Ratnagiri, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1021,
+      "syncedAt": "2025-12-23T01:51:58.578Z",
+      "scanCount": 12,
+      "image": "https://source.unsplash.com/800x600/?fresh%20ripe%20mango%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Ratnagiri, India",
+          "timestamp": "2025-12-22T01:51:58.577Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "ac0c3d1bb303a899e30e1128780bb1aed4ef3f96d9ba76ebbb79f6b22cb946be"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-22T03:51:58.577Z",
+          "description": "Product received and verified",
+          "previousHash": "ac0c3d1bb303a899e30e1128780bb1aed4ef3f96d9ba76ebbb79f6b22cb946be",
+          "hash": "ca9db5774c3e5ca3e933e6725ed9321c4bad67d630bd1b1308537f223d114fa0"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-22T11:51:58.577Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "ca9db5774c3e5ca3e933e6725ed9321c4bad67d630bd1b1308537f223d114fa0",
+          "hash": "2eefe19fd3c6bf451afc892d7a92feebb0fdb8991e173b7eed919b2ff1e5836a"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "21": {
+      "id": 21,
+      "name": "Red Papaya",
+      "origin": "Karnataka, India",
+      "batch": "KA-REDPAPAYA-2025-Q1B",
+      "harvestDate": "21 Dec 2025",
+      "description": "Red Papaya sourced from Karnataka, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1023,
+      "syncedAt": "2025-12-23T01:51:58.582Z",
+      "scanCount": 17,
+      "image": "https://source.unsplash.com/800x600/?fresh%20papaya%20fruit%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Karnataka, India",
+          "timestamp": "2025-12-21T01:51:58.581Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "3b662f38fdf7788495fdfccd43f92a22018bb270bb517c9f209b07f314593456"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-21T03:51:58.581Z",
+          "description": "Product received and verified",
+          "previousHash": "3b662f38fdf7788495fdfccd43f92a22018bb270bb517c9f209b07f314593456",
+          "hash": "09914bfd4caea32e38f74b51a252fdf1c4f4909add699176e9524b5e256f8ed3"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-21T11:51:58.581Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "09914bfd4caea32e38f74b51a252fdf1c4f4909add699176e9524b5e256f8ed3",
+          "hash": "8359e41885076de6da1f6435bc60b01db5d9d2f5176405685716103056e3b763"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T01:59:13.233Z"
+    },
+    "22": {
+      "id": 22,
+      "name": "Organic Tomato",
+      "origin": "Nashik, India",
+      "batch": "NA-ORGANICTOMATO-2025-RK8",
+      "harvestDate": "20 Dec 2025",
+      "description": "Organic Tomato sourced from Nashik, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1025,
+      "syncedAt": "2025-12-23T01:51:58.584Z",
+      "scanCount": 4,
+      "image": "https://source.unsplash.com/800x600/?fresh%20red%20tomato%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Nashik, India",
+          "timestamp": "2025-12-20T01:51:58.584Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "17d39a50f6cec49349ba563ead6901461854225652e24cc3247c57f9591679e0"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-20T03:51:58.584Z",
+          "description": "Product received and verified",
+          "previousHash": "17d39a50f6cec49349ba563ead6901461854225652e24cc3247c57f9591679e0",
+          "hash": "f1bac86e2f7ff2ed6feaa881821553eed370cc13175978fd7c50c8ceb57c508e"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-20T11:51:58.584Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "f1bac86e2f7ff2ed6feaa881821553eed370cc13175978fd7c50c8ceb57c508e",
+          "hash": "b3beee44bf8b80e076eea43d3750cb8fa404849795bec6886ee23ca66ba82808"
+        }
+      ],
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAi6SURBVO3BwZEbSRAEwcgy6K9y3krQ+2gOB8UL9/QHkrTAIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSHPyAJ/7K2/CYJN9pyIwknbTlJwrdry0kSTtpykoQnteU3SfiXteXGIElLDJK0xCBJSwyStMQgSUsMkrTEIElLfPgL2vLNknCrLTeScNKWk7bcaMuNJPymLSdJOEnCSVtOknDSlhtJeFpbvlkSnjRI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hIfvkASntSWtyXhTUk4actJEk7a8psk3GjLSRJuJOGkLSdteVsSntSWNw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMQH/RFJuNGWkyTcaMtJEt7WlhttuZEEfbdBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpb4oL+iLZu15VZbNkvCjbboziBJSwyStMQgSUsMkrTEIElLDJK0xCBJS3z4Am351yXhRltOknCShJO23EjC29pykoSTttxIwtva8i8bJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD39BEv7v2nKShCe15SQJJ2251ZaTJJy05SQJJ205ScJJW96WhP+zQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWSH+ga0l4UluelIS3teVGEt7UFj1rkKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4sMfkISTtjwpCSdtOUnC09pyIwknbbnRlhtJuJWEk7Y8qS1PSsK3a8uNJJy05cYgSUsMkrTEIElLDJK0xCBJSwyStMQgSUukP7iUhJO23EjCjbY8LQk32vKkJLytLW9Kwrdry0kSTtpyIwk32vKkQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKW+PAFkvCkJGyXhBttuZGEk7b8JgknbXlSW06ScKMtJ0m41ZaTJDypLW8aJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD39BEm605U1JuNWWG205ScKNJJy05SQJ3y4JN9qyXVuelISTttwYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD39AW06ScNKWkyS8qS2/ScKNJJy05UYSntSWW0m40ZaTtrypLb9JwklbbiThpC0nSXjTIElLDJK0xCBJSwyStMQgSUsMkrTEIElLfPgHtGW7trypLTeS8LS2PCkJN9pyqy0nSThpy0kSntSWJw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMSHL5CEG0l4W1uelIQbbTlJwklbbrXlSUk4acuTknDSllttOUnCk9rypkGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwByThpC03knDSlrcl4UltuZGEJ7XlN0k4acuTkvCmJNxqy0lbTpJwIwk32nJjkKQlBklaYpCkJQZJWmKQpCUGSVpikKQl0h88LAk32nKShCe15VYSntSWG0n4dm25kYSTtpwk4UZbfpOEJ7XlRhJO2vKkQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ9/QVtuJOFJbbmVhJO2nCThpC1PastJEm615SQJT2rLt2vLSRJO2nIjCd9skKQlBklaYpCkJQZJWmKQpCUGSVpikKQlPvwBSbjRlhttuZGEpyXhRhK2S8KTkvCmtrwtCTfa8s0GSVpikKQlBklaYpCkJQZJWmKQpCUGSVoi/cHDknCjLSdJuNGWW0m40ZaTJJy0ZbsknLTlRhK2a8tJEk7a8qQknLTlxiBJSwyStMQgSUsMkrTEIElLDJK0xCBJS3z4A5Jw0paTJJwk4aQtJ0k4ScLT2nKShBtJ2K4tb2rLjSSctOU3SXhSEk7acpKENw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMSHvyAJN9rypLborC1vS8JJW24k4UZbbrXlJAknbbmRhJO2vGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCXSH7wsCdu15UlJ+GZteVsSbrTlJAlPa8uNJLypLU8aJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJ9AcvS8JJW96UhKe15SQJJ205ScJJW06S8LS2PCkJT2rL05Jw0pY3JeGkLTcGSVpikKQlBklaYpCkJQZJWmKQpCUGSVoi/cGlJNxoy0kSTtpyIwknbflNEk7a8n+XhJO2nCThpC0nSThpy40kbNeWbzZI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hLpD3QtCU9qy0kSvl1bTpJw0pZvloSTtjwtCSdtOUnCSVveNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEoMkLfHhD0jCv6wtOmvLb5LwpiSctOVtSThpy40k3EjCSVueNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEh/+grZ8syTcastJEk7acpKEk7acJOFGW57WlhtJOGnLSRJO2vK0tjypLTeS8KZBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpb48AWS8KS2PC0JJ2250ZaTJJy05SQJJ0k4actv2nKShCcl4aQtT0rCdm05ScJJW24MkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEB/0RbbmRhBtteVJbTpLwm7bcaMtJEk7acpKEJ7XlN0k4actJEk6S8KS2PGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+6K9IwklbTpJwIwknbXlbW06ScNKW7dryprZ8s0GSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwBdryr2vLSRKe1JYnteU3SbjRlhtJeFMSftOWG235lw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMSHvyAJ/7ok3GjLSRKelIQbbbnVlpMknLRluyQ8qS1PSsJJW24MkrTEIElLDJK0xCBJSwyStMQgSUsMkrRE+gNJWmCQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQl/gMuiuhNKP0F7gAAAABJRU5ErkJggg=="
+    },
+    "23": {
+      "id": 23,
+      "name": "Jackfruit",
+      "origin": "Kerala, India",
+      "batch": "KE-JACKFRUIT-2025-G7P",
+      "harvestDate": "19 Dec 2025",
+      "description": "Jackfruit sourced from Kerala, India via verified supply chain",
+      "state": 1,
+      "distributorId": 1027,
+      "syncedAt": "2025-12-23T01:51:58.589Z",
+      "scanCount": 17,
+      "image": "https://source.unsplash.com/800x600/?fresh%20jackfruit%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Kerala, India",
+          "timestamp": "2025-12-19T01:51:58.588Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "5ae069c1348a6504ed8a70cf7eff4e932cf189f1c27d46c3e41a17e079595c62"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-19T03:51:58.588Z",
+          "description": "Product received and verified",
+          "previousHash": "5ae069c1348a6504ed8a70cf7eff4e932cf189f1c27d46c3e41a17e079595c62",
+          "hash": "745e67de33d7d2e393f3eb1929ab3a20e779dee534aac409f2f41d40d6a0f349"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-19T11:51:58.588Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "745e67de33d7d2e393f3eb1929ab3a20e779dee534aac409f2f41d40d6a0f349",
+          "hash": "f77acc38024d28de4407900a449872e129f6b5611eb6f56b07180ea4a17daef5"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:56:50.149Z"
+    },
+    "24": {
+      "id": 24,
+      "name": "Fresh Lemon",
+      "origin": "Punjab, India",
+      "batch": "PU-FRESHLEMON-2025-10E",
+      "harvestDate": "18 Dec 2025",
+      "description": "Fresh Lemon sourced from Punjab, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1029,
+      "syncedAt": "2025-12-23T01:51:58.592Z",
+      "scanCount": 1,
+      "image": "https://source.unsplash.com/800x600/?fresh%20lemon%20fruit%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Punjab, India",
+          "timestamp": "2025-12-18T01:51:58.592Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "c0de952528dcf23baa3cc1c98cd8e17860b80c10f5d130245dc18c48ac92d5dd"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-18T03:51:58.592Z",
+          "description": "Product received and verified",
+          "previousHash": "c0de952528dcf23baa3cc1c98cd8e17860b80c10f5d130245dc18c48ac92d5dd",
+          "hash": "77e224473be7598f8fb2e78681ed41ee592b16d982be4d724f8f3615148253e6"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-18T11:51:58.592Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "77e224473be7598f8fb2e78681ed41ee592b16d982be4d724f8f3615148253e6",
+          "hash": "123475f7034a1fc9d5653b0a05360672b146750414af5b18b1f273023aac18dc"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "25": {
+      "id": 25,
+      "name": "Basmati Rice",
+      "origin": "Punjab, India",
+      "batch": "PU-BASMATIRICE-2025-FLR",
+      "harvestDate": "17 Dec 2025",
+      "description": "Basmati Rice sourced from Punjab, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1031,
+      "syncedAt": "2025-12-23T01:51:58.595Z",
+      "scanCount": 14,
+      "image": "https://source.unsplash.com/800x600/?rice%20grains%20bowl%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Punjab, India",
+          "timestamp": "2025-12-17T01:51:58.594Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "c5286cd4a221069dee6b7c6539a68823784837a71653a8ea8eca59f503a6ef84"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-17T03:51:58.594Z",
+          "description": "Product received and verified",
+          "previousHash": "c5286cd4a221069dee6b7c6539a68823784837a71653a8ea8eca59f503a6ef84",
+          "hash": "a1fe21de0926bdfc58f8813d743d56ab5a0baf817a7045f46e771d60b97b7544"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-17T11:51:58.594Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "a1fe21de0926bdfc58f8813d743d56ab5a0baf817a7045f46e771d60b97b7544",
+          "hash": "03eab5c10649e49b5ebea53a4d96e1da83c36e5de21be884624c2dcfa1eb9b97"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-26T05:26:28.452Z"
+    },
+    "26": {
+      "id": 26,
+      "name": "Green Beans",
+      "origin": "Maharashtra, India",
+      "batch": "MA-GREENBEANS-2025-187",
+      "harvestDate": "16 Dec 2025",
+      "description": "Green Beans sourced from Maharashtra, India via verified supply chain",
+      "state": 2,
+      "distributorId": 1033,
+      "syncedAt": "2025-12-23T01:51:58.598Z",
+      "scanCount": 11,
+      "image": "https://source.unsplash.com/800x600/?fresh%20green%20beans%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Maharashtra, India",
+          "timestamp": "2025-12-16T01:51:58.598Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "e0789f58ff444dfb45fb4ed528d9a1f2675ebd71ac952f3799979b2b58f93dea"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-16T03:51:58.598Z",
+          "description": "Product received and verified",
+          "previousHash": "e0789f58ff444dfb45fb4ed528d9a1f2675ebd71ac952f3799979b2b58f93dea",
+          "hash": "867195da1570fc78a0e7822cdb00b15c8ecbe69b4e3f464934cf762986c12fd0"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-16T11:51:58.598Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "867195da1570fc78a0e7822cdb00b15c8ecbe69b4e3f464934cf762986c12fd0",
+          "hash": "4ff2fd3f9c7b034309876b2d902ae245dcb92547887cf0bdc7120f6073f287dc"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:56:44.863Z"
+    },
+    "27": {
+      "id": 27,
+      "name": "Peach",
+      "origin": "Assam",
+      "batch": "AS-PEACH-2025-8Z9",
+      "harvestDate": "23 Dec 2025",
+      "description": "Peach sourced from Assam via verified supply chain",
+      "state": 1,
+      "distributorId": 23,
+      "syncedAt": "2025-12-23T02:01:04.389Z",
+      "scanCount": 1,
+      "image": "https://source.unsplash.com/800x600/?peach%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Assam",
+          "timestamp": "2025-12-23T02:00:57.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "9a2ffba226b64e056a90601f8f3275a5a06578a6b3a914d054a36c0fbe3e7048"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T04:00:57.000Z",
+          "description": "Product received and verified",
+          "previousHash": "9a2ffba226b64e056a90601f8f3275a5a06578a6b3a914d054a36c0fbe3e7048",
+          "hash": "c8f42d241a95329e59874c1e774af635038dba2446672dbcd3bb3f57e1bd66ac"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T12:00:57.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "c8f42d241a95329e59874c1e774af635038dba2446672dbcd3bb3f57e1bd66ac",
+          "hash": "5aa02725676c146f5455630e4612f94374deb53c31b93f2801360ec5de3dfbd9"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:02:58.501Z"
+    },
+    "28": {
+      "id": 28,
+      "name": "Pear",
+      "origin": "Telagana",
+      "batch": "TE-PEAR-2025-VVX",
+      "harvestDate": "23 Dec 2025",
+      "description": "Pear sourced from Telagana via verified supply chain",
+      "state": 2,
+      "distributorId": 24,
+      "syncedAt": "2025-12-23T02:04:20.937Z",
+      "scanCount": 3,
+      "image": "https://source.unsplash.com/800x600/?pear%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Telagana",
+          "timestamp": "2025-12-23T02:04:17.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "da618648d0c75240b325f865eda9ace87c92c86798b8b18dba474d015d6f8e17"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T04:04:17.000Z",
+          "description": "Product received and verified",
+          "previousHash": "da618648d0c75240b325f865eda9ace87c92c86798b8b18dba474d015d6f8e17",
+          "hash": "d05ec899592cb1fa73c340985ff757ea0a82452535bd142051d74c4d6d75d95e"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T12:04:17.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "d05ec899592cb1fa73c340985ff757ea0a82452535bd142051d74c4d6d75d95e",
+          "hash": "d5d362eccff737e62e3f67b8fdec19edfeec74d900f1e6bee41a9808920831ed"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:08:31.577Z"
+    },
+    "29": {
+      "id": 29,
+      "name": "Cardamom",
+      "origin": "Kerala",
+      "batch": "KE-CARDAMOM-2025-V2L",
+      "harvestDate": "23 Dec 2025",
+      "description": "Cardamom sourced from Kerala via verified supply chain",
+      "state": 2,
+      "distributorId": 25,
+      "syncedAt": "2025-12-23T02:18:12.904Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?cardamom%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Kerala",
+          "timestamp": "2025-12-23T02:18:07.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "cacf70888e7c354ddde0a995f015d9ddedd37754268b23719464a9f803fba583"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T04:18:07.000Z",
+          "description": "Product received and verified",
+          "previousHash": "cacf70888e7c354ddde0a995f015d9ddedd37754268b23719464a9f803fba583",
+          "hash": "25da3eaa8ae7d514cabdd700f76e5ce202d4a8238289e54e691e2d8996fdecfa"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T12:18:07.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "25da3eaa8ae7d514cabdd700f76e5ce202d4a8238289e54e691e2d8996fdecfa",
+          "hash": "d7fa39638de91a6e1495e3932bbdc6e388c3276223ea6c683f5a4fee391658ce"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "30": {
+      "id": 30,
+      "name": "Mango",
+      "origin": "Vellore",
+      "batch": "VE-MANGO-2025-OKQ",
+      "harvestDate": "23 Dec 2025",
+      "description": "Mango sourced from Vellore via verified supply chain",
+      "state": 2,
+      "distributorId": 26,
+      "syncedAt": "2025-12-23T02:36:17.842Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?fresh%20ripe%20mango%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Vellore",
+          "timestamp": "2025-12-23T02:36:13.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "e5d334e22772c0840959091c1d9bb0f37a72ae6938bafa84ac48fe1e17f3ca9a"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T04:36:13.000Z",
+          "description": "Product received and verified",
+          "previousHash": "e5d334e22772c0840959091c1d9bb0f37a72ae6938bafa84ac48fe1e17f3ca9a",
+          "hash": "2df43603b9a01e5a59beb748a8d55c17c918ac87dc2b772b7e4f392aeca8119c"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T12:36:13.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "2df43603b9a01e5a59beb748a8d55c17c918ac87dc2b772b7e4f392aeca8119c",
+          "hash": "6d0fbd68ae1e58c7beebe63d530524a6318dfed037f2f31eef91e256e437e671"
+        }
+      ],
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAkASURBVO3BwZEcSRIEQfOQ5p9lPzBwOY+cQnVgTTX9A0laYJCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVriwy9Iwr+sLT9JwklbvlkSntaWkySctOUkCSdtOUnCk9rykyT8y9pyY5CkJQZJWmKQpCUGSVpikKQlBklaYpCkJT78BW35Zkm41ZaTJNxoy5PaciMJT0vCSVtOknDSlhtJeFpbvlkSnjRI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hIfvkASntSWb9eWkyQ8qS0nSThpy0+ScKMtJ0m4kYSTtpy05W1JeFJb3jRI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hIf9CuS8Ka23EjC29pyoy03kqDvNkjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEh/0V7TlJAknbTlJwklbbrTlVltuJOGkLU9Kwo226M4gSUsMkrTEIElLDJK0xCBJSwyStMQgSUt8+AJt0Z22nCThpC03kvC2JNxoy40kvK0t/7JBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpb48BckQc9KwklbTpJw0pZbbTlJwklbTpJw0paTJJy05W1J+C8bJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD7+gLXpWEk7a8qQk3ErCSVuelISTtpwk4aQtt9qi/2+QpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVoi/YNLSThpy5OScNKWkyS8rS0nSbjRlicl4WltOUnCjbY8KQnfri03knDSlhuDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC3x4S9Iwklb3tSWW0l4U1tOkvC2tjypLSdJOEnC29pykoSTttxIwo22PGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+fIEk3GjLSRKe1pYbSThpy0kSTtpyIwknbflJEk7a8qS2nCThRltOknCrLSdJeFJb3jRI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hIffkFbTpJw0paTJDypLSdJ+EkSTtpyIwknbbmRhJO2nCTh2yXhRlu2a8uTknDSlhuDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC2R/sGlJJy05SQJT2rLSRK+XVtuJOFGW56WhBtt2S4JJ205ScKNtpwk4UZbbgyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSHvyAJb0rCSVtuJeFGW24k4UZbbiThbUk4actJEm605VZbTpJw0paTJDypLU8aJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJ9A9eloQbbbmRhJO23ErCjbacJOGkLSdJOGnLSRJ+0pY3JeFNbXlaEm605ZsNkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEh1+QhJO23GjLSRJutOVWEm605SQJ36wtP0nCSVtOkrBZEm615aQtJ0m4kYQbbbkxSNISgyQtMUjSEoMkLTFI0hKDJC0xSNIS6R9cSsKNtjwpCTpry0kS3taWG0k4actJEm605SdJeFJbbiThpC1PGiRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwF7TlRhJutOXbJeFJbTlJwtPacpKEJ7Xl27XlJAknbbmRhG82SNISgyQtMUjSEoMkLTFI0hKDJC0xSNISH35BW06ScNKWNyXhpC0/ScJJW07aciMJN9pykoRbSXhSEt7Ulrcl4UZbvtkgSUsMkrTEIElLDJK0xCBJSwyStMQgSUt8+AvacpKEk7acJOEkCSdteVsSbrTlJAk32vK0JNxoy0kSnpSEp7XlJAknbXlSEk7acmOQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+/IIknLTlRhJutOUkCU9Lwo22nCThSUl4WltuJOFGW24k4aQtP0nCk5Jw0paTJLxpkKQlBklaYpCkJQZJWmKQpCUGSVpikKQlPoi2nCThVlue1JYbSThpy7dry0kSTpJwoy232nKShJO23EjCSVveNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEukfLJeEk7acJOFpbXlTEk7acpKEk7a8LQk32nKShKe15UYS3tSWJw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMSHL5CEN7XlaUn4lyXhVltutOUkCSdJuNGWpyXhpC1vSsJJW24MkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEh1+QhCe15SQJN5Jw0pafJOFGW06S8Ka23ErCjSSctOVGW24k4W1JuNGWG2150iBJSwyStMQgSUsMkrTEIElLDJK0xCBJS3z4BW15U1tutOVpbTlJwo22nCThRhJuteUkCSdtudGWN7XlaUk4actJEk7a8qZBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD78gCf+yttxKwklbbiThpC0nSbjRlp8k4U1JOGnL25Jw0pYbSbiRhJO2PGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+/AVt+WZJuNWWG0k4actJW57Ulqe15UYSTtpykoSTtjytLU9qy40kvGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+fIEkPKktT0vCjbacJOFGW07acpKEk7b8pC0nSXhSEk7a8qQkbNeWkySctOXGIElLDJK0xCBJSwyStMQgSUsMkrTEIElLfNCvaMuNJNxoy0kSbrTlJAk/acuNtpwk4aQtJ0l4Ult+koSTtpwk4SQJT2rLkwZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuKD/ooknLTlRhJutOVtbTlJwklbtmvLm9ryzQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDF2jLf10STtpy0pYbSThpy0lbfpKEG225kYQ3JeEnbbnRln/ZIElLDJK0xCBJSwyStMQgSUsMkrTEIElLfPgLkvCvS8KNtpwk4UZbbiThpC232nKShJO2bJeEJ7XlSUk4acuNQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWSP9AkhYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpif8BpwQSYoMmdz4AAAAASUVORK5CYII="
+    },
+    "31": {
+      "id": 31,
+      "name": "JackFruit",
+      "origin": "Maharashtra",
+      "batch": "MA-JACKFRUIT-2025-0V4",
+      "harvestDate": "23 Dec 2025",
+      "description": "JackFruit sourced from Maharashtra via verified supply chain",
+      "state": 2,
+      "distributorId": 27,
+      "syncedAt": "2025-12-23T02:45:39.588Z",
+      "scanCount": 3,
+      "image": "https://source.unsplash.com/800x600/?fresh%20jackfruit%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Maharashtra",
+          "timestamp": "2025-12-23T02:45:35.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "c1fa8cbf37e2034858ea40355024199aebe186b9d84c925325e1cf4cd036bb8d"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T04:45:35.000Z",
+          "description": "Product received and verified",
+          "previousHash": "c1fa8cbf37e2034858ea40355024199aebe186b9d84c925325e1cf4cd036bb8d",
+          "hash": "ec57c91927ea33201f8910fc5a40e1a91f7d9da3c1ad070d0df3e435f41fb8bb"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T12:45:35.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "ec57c91927ea33201f8910fc5a40e1a91f7d9da3c1ad070d0df3e435f41fb8bb",
+          "hash": "52d46b8176b7401743b766faa2bdbc20652601a3268c781170f3e0d8321ff6e0"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:51:28.984Z"
+    },
+    "32": {
+      "id": 32,
+      "name": "Ginger",
+      "origin": "China",
+      "batch": "CH-GINGER-2025-QV7",
+      "harvestDate": "23 Dec 2025",
+      "description": "Ginger sourced from China via verified supply chain",
+      "state": 2,
+      "distributorId": 28,
+      "syncedAt": "2025-12-23T02:54:37.081Z",
+      "scanCount": 3,
+      "image": "https://source.unsplash.com/800x600/?ginger%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "China",
+          "timestamp": "2025-12-23T02:54:32.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "b60f08dd5f1996e208659388a86ba3ca2f929b47f9e472f29d322800a2dbfdd2"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T04:54:32.000Z",
+          "description": "Product received and verified",
+          "previousHash": "b60f08dd5f1996e208659388a86ba3ca2f929b47f9e472f29d322800a2dbfdd2",
+          "hash": "b2e784d08f479aa2b1921507bd0eca8e832d7eb43d91c86b88be7fb2685aa906"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T12:54:32.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "b2e784d08f479aa2b1921507bd0eca8e832d7eb43d91c86b88be7fb2685aa906",
+          "hash": "47015c8fd6fc66057f0ab89ad34332cf8142198722ceed16ee4db6143eb9a76e"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T02:56:39.898Z"
+    },
+    "33": {
+      "id": 33,
+      "name": "brown sugar",
+      "origin": "Africa",
+      "batch": "AF-BROWNSUGAR-2025-M31",
+      "harvestDate": "23 Dec 2025",
+      "description": "brown sugar sourced from Africa via verified supply chain",
+      "state": 2,
+      "distributorId": 29,
+      "syncedAt": "2025-12-23T03:05:19.468Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?brown%20sugar%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Africa",
+          "timestamp": "2025-12-23T03:05:15.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "d29cb0e33099cee7b5ced24625ed5ed92f20da39215a9001e00b655b05d9841a"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T05:05:15.000Z",
+          "description": "Product received and verified",
+          "previousHash": "d29cb0e33099cee7b5ced24625ed5ed92f20da39215a9001e00b655b05d9841a",
+          "hash": "6ebf3908121b39f79b40fde26d838b00e2857e37d3f7b2a817107aee1076d0f9"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T13:05:15.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "6ebf3908121b39f79b40fde26d838b00e2857e37d3f7b2a817107aee1076d0f9",
+          "hash": "bc5f99575acf11193316bb07954ad1ee124296bf307240b695dd5d5f00b11f69"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "34": {
+      "id": 34,
+      "name": "Jaggery",
+      "origin": "Tamil Nadu",
+      "batch": "TA-JAGGERY-2025-AD2",
+      "harvestDate": "23 Dec 2025",
+      "description": "Jaggery sourced from Tamil Nadu via verified supply chain",
+      "state": 1,
+      "distributorId": 30,
+      "syncedAt": "2025-12-23T03:18:42.819Z",
+      "scanCount": 1,
+      "image": "https://source.unsplash.com/800x600/?jaggery%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Tamil Nadu",
+          "timestamp": "2025-12-23T03:18:36.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "ccfcbc6557650cf7739b565c3417e33074eb5a95ef37b09ecb177148770b53fe"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T05:18:36.000Z",
+          "description": "Product received and verified",
+          "previousHash": "ccfcbc6557650cf7739b565c3417e33074eb5a95ef37b09ecb177148770b53fe",
+          "hash": "925b13efc185ffb3e73f15c1eb423e58b81cb49225e67b2a2da78edf967e1109"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T13:18:36.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "925b13efc185ffb3e73f15c1eb423e58b81cb49225e67b2a2da78edf967e1109",
+          "hash": "339d3ffe1f7919e49c1b77194f06bd61aa2acd2788bf54da8422dfbd4b589f12"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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y5OS8GltOUnCSVuelIQbbXlaEm605SQJJ2150iBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSLX5CEv6wt3y4JT2rL05LwX5eEk7bcaMtJEk7a8kmDJC0xSNISgyQtMUjSEoMkLTFI0hKDJC3x4h9oyzdLwqe15UZbbiThRhLeacuNtpwk4aQt364tT0rCjSSctOVJgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQt8eILJOFJbXlaW56UhBttuZGEk7a8k4STtjwpCSdteVIS/roknLTlxiBJSwyStMQgSUsMkrTEIElLDJK0xCBJS7zQr0jCSVtOknCjLTfa8rS2PKktn9SWb5eEk7acJOGTBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4oX+iSSctOVGEp7UlltJeFJbntSW7dpykoSTtnzSIElLDJK0xCBJSwyStMQgSUsMkrTEIElLvPgCbdmuLTeScNKWG205ScJJEj6tLSdJOGnLjSRs15aTttxIwklbbgyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSLfyAJf10STtpy0pZPastJEj4tCTeScNKWG205ScI7bTlJwklbbiThpC0nbXnSIElLDJK0xCBJSwyStMQgSUsMkrTEIElLpD+QpAUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4n+XRwZlrgqV0QAAAABJRU5ErkJggg==",
+      "lastScanned": "2025-12-23T03:22:54.226Z"
+    },
+    "35": {
+      "id": 35,
+      "name": "Oil",
+      "origin": "India",
+      "batch": "IN-OIL-2025-FSI",
+      "harvestDate": "23 Dec 2025",
+      "description": "Oil sourced from India via verified supply chain",
+      "state": 2,
+      "distributorId": 31,
+      "syncedAt": "2025-12-23T03:39:37.971Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?oil%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "India",
+          "timestamp": "2025-12-23T03:39:34.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "6d3faa038c1ef0bd9ff91dccd484f238645be50e8ae67018da341206f304b67f"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T05:39:34.000Z",
+          "description": "Product received and verified",
+          "previousHash": "6d3faa038c1ef0bd9ff91dccd484f238645be50e8ae67018da341206f304b67f",
+          "hash": "d103b2058e2ae546290638f2c1b7390dbc8dfcc2cd13ec99b21198d393770b64"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T13:39:34.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "d103b2058e2ae546290638f2c1b7390dbc8dfcc2cd13ec99b21198d393770b64",
+          "hash": "35dbbb0ec179be347ec34b8cb49760a30b48514ad66a300f678cf0fd50447329"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T03:44:40.932Z"
+    },
+    "36": {
+      "id": 36,
+      "name": "cucumber",
+      "origin": "England",
+      "batch": "EN-CUCUMBER-2025-WTS",
+      "harvestDate": "23 Dec 2025",
+      "description": "cucumber sourced from England via verified supply chain",
+      "state": 0,
+      "distributorId": 20,
+      "syncedAt": "2025-12-23T03:43:23.283Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?cucumber%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "England",
+          "timestamp": "2025-12-23T01:06:07.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "d3b8373016a3283ad1dbed146adef0d2d7c22a9614e1415c73d3386c2c3901a3"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T03:06:07.000Z",
+          "description": "Product received and verified",
+          "previousHash": "d3b8373016a3283ad1dbed146adef0d2d7c22a9614e1415c73d3386c2c3901a3",
+          "hash": "7029fbb58a9ca6f27655ebe48385772f8f1c31678c4b535947f34cd8fe41e779"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T11:06:07.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "7029fbb58a9ca6f27655ebe48385772f8f1c31678c4b535947f34cd8fe41e779",
+          "hash": "22cefee11fc1c7e8933b5db59b5869d166b9e337d9fb6615be808d1c39ba5288"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-28T15:53:15.849Z"
+    },
+    "37": {
+      "id": 37,
+      "name": "Mango",
+      "origin": "Haryana",
+      "batch": "HA-MANGO-2025-T9Z",
+      "harvestDate": "23 Dec 2025",
+      "description": "Mango sourced from Haryana via verified supply chain",
+      "state": 1,
+      "distributorId": 32,
+      "syncedAt": "2025-12-23T07:29:25.442Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?fresh%20ripe%20mango%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Haryana",
+          "timestamp": "2025-12-23T07:29:18.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "125a57ed64a21a5f4d1cdf0b7820dffdf078698a4f78b06cc2345b7d79501c24"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T09:29:18.000Z",
+          "description": "Product received and verified",
+          "previousHash": "125a57ed64a21a5f4d1cdf0b7820dffdf078698a4f78b06cc2345b7d79501c24",
+          "hash": "e99cb61eb461440905739997c4b3b4530812fd82a3542b8340a8d633468fdc03"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T17:29:18.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "e99cb61eb461440905739997c4b3b4530812fd82a3542b8340a8d633468fdc03",
+          "hash": "0fdc1361dbd39c1b424fd0ee3a5587cadee969b817380b3a85037d49d220532f"
+        }
+      ],
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAjeSURBVO3BwZEci44EwUhY669yLhVYzKFY7MH74Z7+gSQdMEjSEYMkHTFI0hGDJB0xSNIRgyQdMUjSEYMkHTFI0hGDJB0xSNIRgyQdMUjSEYMkHTFI0hGDJB3x4S9Iwn9ZW36ShCfasknCpi1PJOFtbdkkYdOWTRI2bdkk4U1t+UkS/sva8sQgSUcMknTEIElHDJJ0xCBJRwySdMQgSUd8+Afa8psl4am2bJKwScKmLZskbNqyacsTSXhbEjZt2SRh05YnkvC2tvxmSXjTIElHDJJ0xCBJRwySdMQgSUcMknTEIElHfPgFkvCmtvx2bXlTEjZt2SRh05afJOGJtmyS8EQSNm3ZtOXbkvCmtnzTIElHDJJ0xCBJRwySdMQgSUcMknTEIElHfNBfkYRNWzZJ2LRl05YnknBdW55Ign63QZKOGCTpiEGSjhgk6YhBko4YJOmIQZKO+KB/IglvSsKmLU+05am2PJGEJ9ryRBKeaIueGSTpiEGSjhgk6YhBko4YJOmIQZKOGCTpiA+/QFu0S8KmLZskbNryRBLe1pZNEjZJ2LTliSR8W1v+ywZJOmKQpCMGSTpikKQjBkk6YpCkIwZJOuLDP5CE/3Vt2SRh05ZNEjZt2SRh05an2rJJwpvasknCpi3floT/ZYMkHTFI0hGDJB0xSNIRgyQdMUjSEYMkHfHhL2iLdkm4LAlPJWHTlifasknCpi2bJGza8lRb9P8bJOmIQZKOGCTpiEGSjhgk6YhBko4YJOmIQZKO+PAXJGHTljclYdOWTRK+rS3f1JYnkvBUEjZt2SThTW15Igm/XVueSMKmLU8MknTEIElHDJJ0xCBJRwySdMQgSUcMknRE+gdfloRvassmCd/Wlk0Sfru2fFMSfru2bJKwacsTSXiiLW8aJOmIQZKOGCTpiEGSjhgk6YhBko4YJOmID39BEp5oyzcl4W1t2SThiba8KQmbtvwkCZu2vKktmyQ80ZZNEp5qyyYJb2rLNw2SdMQgSUcMknTEIElHDJJ0xCBJRwySdMSHf6At35SETVs2SXgqCU8kYdOWJ5KwacsmCb9dEp5oy3VteVMSNm15YpCkIwZJOmKQpCMGSTpikKQjBkk6YpCkIz78A0nYtGWThE1bnkjCpi1PJWHTljcl4U1teSoJb2rLN7XlJ0nYtOWJJGzasknCNw2SdMQgSUcMknTEIElHDJJ0xCBJRwySdMSHA9ryprZskvBUW55Iwpva8kQSrkvCE215qi2bJGzasknCm9rypkGSjhgk6YhBko4YJOmIQZKOGCTpiEGSjvggkvC2JGzasmnLJgmbtnxbW96UhCfasknCJgmbtjzVlk0S3tSWbxok6YhBko4YJOmIQZKOGCTpiEGSjhgk6Yj0D74sCd/Ulk0Svq0tmyQ80Za3JWHTlk0S3tSWTRK+rS1PJGHTlk0SnmjLE4MkHTFI0hGDJB0xSNIRgyQdMUjSEYMkHfHhH0jCpi2bJGza8kQSNm35SRLelIQ3JeHbkrBpyxNJ+Ka2/CQJmyQ80ZY3teVNgyQdMUjSEYMkHTFI0hGDJB0xSNIRgyQdMUjSEekfPJSE36wt35aETVs2SXiiLU8k4am2bJKwacs3JeGJtjyVhE1bnkjCE2150yBJRwySdMQgSUcMknTEIElHDJJ0xCBJR3z4BdryRBI2SXhbW55IwhNteSIJb0vCm5LwTW35tiQ80ZbfbJCkIwZJOmKQpCMGSTpikKQjBkk6YpCkI9I/+OWSsGnLm5JwXVs2Sdi05W1J2LTliSRc15ZNEjZteVMSNm15YpCkIwZJOmKQpCMGSTpikKQjBkk6YpCkIz78BUnYtGWThE1bNknYtGWThE1bfpKEN7Xlm5LwtrZ8U1ueSMKmLT9JwpuSsGnLJgnfNEjSEYMkHTFI0hGDJB0xSNIRgyQdMUjSER9+gbZskrBpyyYJm7ZsknBdEjZt+e2SsGnLE0l4oi1PtWWThE1bnkjCpi3fNEjSEYMkHTFI0hGDJB0xSNIRgyQdMUjSEekf/I9LwqYtTyXhTW3ZJOFNbXlbEt7Ulk0S3taWJ5LwTW150yBJRwySdMQgSUcMknTEIElHDJJ0xCBJR6R/cFwSNm15Igk/actlSfi2trwpCW9qy9uSsGnLNyVh05YnBkk6YpCkIwZJOmKQpCMGSTpikKQjBkk6Iv2Dh5LwRFs2SdCuLb9dEjZt2SRh05ZNEjZteSIJ17XlNxsk6YhBko4YJOmIQZKOGCTpiEGSjhgk6YgPf0Fb3tSW3y4JlyXhbW3ZJGHTlifa8k1teVsSNm3ZJGHTlm8aJOmIQZKOGCTpiEGSjhgk6YhBko4YJOmIQZKO+PAXJOG/rC1PteVNSdi0ZdOWTRI2bflJEr4pCZu2fFsSNm15IglPJGHTljcNknTEIElHDJJ0xCBJRwySdMQgSUcMknTEh3+gLb9ZEp5qyxNJeKItmyRs2rJpy9va8kQSNm3ZJGHTlre15U1teSIJ3zRI0hGDJB0xSNIRgyQdMUjSEYMkHTFI0hEffoEkvKktb0vCm9ryRFs2SXiiLT9pyyYJb0rCpi1vSsJ1bdkkYdOWJwZJOmKQpCMGSTpikKQjBkk6YpCkIwZJOuKD/oq2bJLwRBLe1JYnkvCTtjzRlk0SNm3ZJOFNbflJEjZt2SRhk4Q3teVNgyQdMUjSEYMkHTFI0hGDJB0xSNIRgyQd8UH/RFs2SXiiLZskbJKwacvb2rJJwqYt17Xlm9rymw2SdMQgSUcMknTEIElHDJJ0xCBJRwySdMSHX6At/3VJ+Ka2bJLwRFt+koQn2vJEEr4pCT9pyxNt+S8bJOmIQZKOGCTpiEGSjhgk6YhBko4YJOmID/9AEv7rkrBpyyYJm7ZskrBpy6YtmyRs2vJUWzZJ2LTluiS8qS1vSsKmLU8MknTEIElHDJJ0xCBJRwySdMQgSUcMknRE+geSdMAgSUcMknTEIElHDJJ0xCBJRwySdMQgSUcMknTEIElHDJJ0xCBJRwySdMQgSUcMknTEIElH/B+5QfxXEU10GQAAAABJRU5ErkJggg==",
+      "lastScanned": "2025-12-28T15:38:08.270Z"
+    },
+    "38": {
+      "id": 38,
+      "name": "Moong dal",
+      "origin": "Haryana",
+      "batch": "HA-MOONGDAL-2025-THO",
+      "harvestDate": "23 Dec 2025",
+      "description": "Moong dal sourced from Haryana via verified supply chain",
+      "state": 2,
+      "distributorId": 33,
+      "syncedAt": "2025-12-23T07:40:39.197Z",
+      "scanCount": 1,
+      "image": "https://source.unsplash.com/800x600/?moong%20dal%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Haryana",
+          "timestamp": "2025-12-23T07:40:34.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "6f2184a9bf39e5a3c7d9f6dfc5b9f856547b5823b51b1eaced2a03403e4038ad"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T09:40:34.000Z",
+          "description": "Product received and verified",
+          "previousHash": "6f2184a9bf39e5a3c7d9f6dfc5b9f856547b5823b51b1eaced2a03403e4038ad",
+          "hash": "eb756f0a2c4b7654d758ae04539aec73c1393d41e0137c5a117f79c47ed28efd"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T17:40:34.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "eb756f0a2c4b7654d758ae04539aec73c1393d41e0137c5a117f79c47ed28efd",
+          "hash": "075572c9f33c1a0408f27f4754a0da2e51cd4a427bf2fdeb38e667bdbfcf6496"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T07:41:52.677Z"
+    },
+    "39": {
+      "id": 39,
+      "name": "Kiwi",
+      "origin": "West Bengal",
+      "batch": "WE-KIWI-2025-P41",
+      "harvestDate": "23 Dec 2025",
+      "description": "Kiwi sourced from West Bengal via verified supply chain",
+      "state": 2,
+      "distributorId": 11,
+      "syncedAt": "2025-12-23T07:49:19.644Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?kiwi%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "West Bengal",
+          "timestamp": "2025-12-22T14:03:17.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "6255517becda3b7383b160507f78d9d0007474e6aeca83c8c0235c8e9c3fefa4"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-22T16:03:17.000Z",
+          "description": "Product received and verified",
+          "previousHash": "6255517becda3b7383b160507f78d9d0007474e6aeca83c8c0235c8e9c3fefa4",
+          "hash": "7ada7476350fa7fbbe09f7f21a1ed9f7487bdfba6e8860da2d7fdd160b6a9b74"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T00:03:17.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "7ada7476350fa7fbbe09f7f21a1ed9f7487bdfba6e8860da2d7fdd160b6a9b74",
+          "hash": "b4a482af20121237d19e6b6bcf61805f61c78346f11581f71e9ddff34cd34b40"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "40": {
+      "id": 40,
+      "name": "spices",
+      "origin": "London",
+      "batch": "LO-SPICES-2025-O1Q",
+      "harvestDate": "23 Dec 2025",
+      "description": "spices sourced from London via verified supply chain",
+      "state": 1,
+      "distributorId": 34,
+      "syncedAt": "2025-12-23T07:49:51.679Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?spices%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "London",
+          "timestamp": "2025-12-23T07:49:46.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "5a7a297dbeeb00c3a60d27336d23afa957019d807ac84fc9a1c5b56defb0d081"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T09:49:46.000Z",
+          "description": "Product received and verified",
+          "previousHash": "5a7a297dbeeb00c3a60d27336d23afa957019d807ac84fc9a1c5b56defb0d081",
+          "hash": "2a92fde7053917c6b52ee439b027b04a2ec92c6eba1910468a7580dde5d153e5"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T17:49:46.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "2a92fde7053917c6b52ee439b027b04a2ec92c6eba1910468a7580dde5d153e5",
+          "hash": "23382d52b87b9ee1be642ff0385c796709c16c156804c9e7beb82fa11f7e94b8"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "41": {
+      "id": 41,
+      "name": "Tomato",
+      "origin": "Bengal",
+      "batch": "BE-TOMATO-2025-G9U",
+      "harvestDate": "23 Dec 2025",
+      "description": "Tomato sourced from Bengal via verified supply chain",
+      "state": 2,
+      "distributorId": 35,
+      "syncedAt": "2025-12-23T09:47:59.727Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?fresh%20red%20tomato%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Bengal",
+          "timestamp": "2025-12-23T09:47:55.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "ced701b6f28013b68c3526e68bcf194738f9d136bce0329ee4890ae3ee4964d2"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T11:47:55.000Z",
+          "description": "Product received and verified",
+          "previousHash": "ced701b6f28013b68c3526e68bcf194738f9d136bce0329ee4890ae3ee4964d2",
+          "hash": "88e44068907a3fb19404efe4f822aa849307db5a16d985e24b7488e3c3817185"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T19:47:55.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "88e44068907a3fb19404efe4f822aa849307db5a16d985e24b7488e3c3817185",
+          "hash": "3c63a52ff5d6f4966f77d6baffed9e0d233b04d486ce598b473174abecfeb280"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T09:50:36.167Z"
+    },
+    "42": {
+      "id": 42,
+      "name": "Ginger",
+      "origin": "China",
+      "batch": "CH-GINGER-2025-QYC",
+      "harvestDate": "23 Dec 2025",
+      "description": "Ginger sourced from China via verified supply chain",
+      "state": 1,
+      "distributorId": 12,
+      "syncedAt": "2025-12-23T09:52:09.052Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?ginger%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "China",
+          "timestamp": "2025-12-22T14:04:08.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "1b6fb73ae5247184b220de81856a7a86ce1bc6b4f77f6eb0afe763e32fdee5f1"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-22T16:04:08.000Z",
+          "description": "Product received and verified",
+          "previousHash": "1b6fb73ae5247184b220de81856a7a86ce1bc6b4f77f6eb0afe763e32fdee5f1",
+          "hash": "37219af9436d200b5ce17f9c3dff23413706ba2832d66f7805cc316917634185"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T00:04:08.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "37219af9436d200b5ce17f9c3dff23413706ba2832d66f7805cc316917634185",
+          "hash": "3b840ac7dc603615789fd6abe5482718d0f8e4f1ccc6fbc072c74869da5d7496"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "43": {
+      "id": 43,
+      "name": "Garlic",
+      "origin": "India",
+      "batch": "IN-GARLIC-2025-EPK",
+      "harvestDate": "23 Dec 2025",
+      "description": "Garlic sourced from India via verified supply chain",
+      "state": 2,
+      "distributorId": 36,
+      "syncedAt": "2025-12-23T09:54:37.571Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?garlic%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "India",
+          "timestamp": "2025-12-23T09:54:34.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "24f71c7a221d46ca7e6839a236675abff38b8459bf8a24cd081e914203a297b3"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T11:54:34.000Z",
+          "description": "Product received and verified",
+          "previousHash": "24f71c7a221d46ca7e6839a236675abff38b8459bf8a24cd081e914203a297b3",
+          "hash": "7fe351ecaaa1291255d3edf8b778dd7743c0bba644d09dadc7f6c2e080d87b05"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T19:54:34.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "7fe351ecaaa1291255d3edf8b778dd7743c0bba644d09dadc7f6c2e080d87b05",
+          "hash": "d4009c7c64c82b9fbbe928e0aeb60056d0e8cdfdd84791dc983db921c2145cd6"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "44": {
+      "id": 44,
+      "name": "Peas",
+      "origin": "Erode",
+      "batch": "ER-PEAS-2025-W2H",
+      "harvestDate": "23 Dec 2025",
+      "description": "Peas sourced from Erode via verified supply chain",
+      "state": 2,
+      "distributorId": 13,
+      "syncedAt": "2025-12-23T09:56:07.250Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?peas%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Erode",
+          "timestamp": "2025-12-22T14:30:25.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "74bd6d2e9f10cb07e4a3d5462462c4f1a670f64decc6153e7108b95f8a09364e"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-22T16:30:25.000Z",
+          "description": "Product received and verified",
+          "previousHash": "74bd6d2e9f10cb07e4a3d5462462c4f1a670f64decc6153e7108b95f8a09364e",
+          "hash": "45db4fa97989b59e3bd7203a185593666379770e50879249370e9a866bf42840"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T00:30:25.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "45db4fa97989b59e3bd7203a185593666379770e50879249370e9a866bf42840",
+          "hash": "536d50ab468b8157a8e5f8e5f0d929d62f987e6ef9827238a7a5b6e5021e8edf"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "45": {
+      "id": 45,
+      "name": "black pepper",
+      "origin": "Karnataka",
+      "batch": "KA-BLACKPEPPER-2025-NSK",
+      "harvestDate": "23 Dec 2025",
+      "description": "black pepper sourced from Karnataka via verified supply chain",
+      "state": 1,
+      "distributorId": 37,
+      "syncedAt": "2025-12-23T09:59:41.429Z",
+      "scanCount": 7,
+      "image": "https://source.unsplash.com/800x600/?black%20pepper%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Karnataka",
+          "timestamp": "2025-12-23T09:59:38.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "aa012d2106c65e5b34ca945e8df3e35d5330e52d2ceffa1f8fd226f2c5899dc9"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T11:59:38.000Z",
+          "description": "Product received and verified",
+          "previousHash": "aa012d2106c65e5b34ca945e8df3e35d5330e52d2ceffa1f8fd226f2c5899dc9",
+          "hash": "426d32c3abb4d3f81b0972cf0de1db6abe35619eee69b1ce0c4d16f2a59ce09b"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T19:59:38.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "426d32c3abb4d3f81b0972cf0de1db6abe35619eee69b1ce0c4d16f2a59ce09b",
+          "hash": "daf5e903e0a2c6d81094ff4ff3e0988712b4588135d96f29d5f9cf6e816912cd"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-28T15:55:39.645Z"
+    },
+    "46": {
+      "id": 46,
+      "name": "Almond",
+      "origin": "Kerala",
+      "batch": "KE-ALMOND-2025-4QU",
+      "harvestDate": "23 Dec 2025",
+      "description": "Almond sourced from Kerala via verified supply chain",
+      "state": 2,
+      "distributorId": 38,
+      "syncedAt": "2025-12-23T14:01:22.343Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?almond%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Kerala",
+          "timestamp": "2025-12-23T13:59:27.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "817248361ad9eefa282394a86dc529d8b9811aee6ce4b2c73852ed902d425728"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T15:59:27.000Z",
+          "description": "Product received and verified",
+          "previousHash": "817248361ad9eefa282394a86dc529d8b9811aee6ce4b2c73852ed902d425728",
+          "hash": "74db3d2a2084f005d71068e85816376243fb72797cf7378ed1f650d3201046d8"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-23T23:59:27.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "74db3d2a2084f005d71068e85816376243fb72797cf7378ed1f650d3201046d8",
+          "hash": "11b4eb26ea6ce9dc36c52256350594a283c832e943e9ba343a1d996195f85e1c"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T14:04:03.101Z"
+    },
+    "47": {
+      "id": 47,
+      "name": "Pumpkin",
+      "origin": "Vellore",
+      "batch": "VE-PUMPKIN-2025-YTA",
+      "harvestDate": "23 Dec 2025",
+      "description": "Pumpkin sourced from Vellore via verified supply chain",
+      "state": 1,
+      "distributorId": 39,
+      "syncedAt": "2025-12-23T14:08:07.966Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?pumpkin%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Vellore",
+          "timestamp": "2025-12-23T14:08:01.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "d42f8c102b00147e5ea219a2d3b19b089ce8c753c80a3dfba9d76f390ca3c24a"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T16:08:01.000Z",
+          "description": "Product received and verified",
+          "previousHash": "d42f8c102b00147e5ea219a2d3b19b089ce8c753c80a3dfba9d76f390ca3c24a",
+          "hash": "c837820a3067803fc3f593f36c80701f7f4331e2ec89afcaa45d52a094e56acc"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-24T00:08:01.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "c837820a3067803fc3f593f36c80701f7f4331e2ec89afcaa45d52a094e56acc",
+          "hash": "cde2f6c8881d73e63ea4f2831b5c2929f3faa4e0e924ed1c71e0dfdb48da671a"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T14:09:55.098Z"
+    },
+    "48": {
+      "id": 48,
+      "name": "Coconut",
+      "origin": "Tamil Nadu",
+      "batch": "TA-COCONUT-2025-W76",
+      "harvestDate": "23 Dec 2025",
+      "description": "Coconut sourced from Tamil Nadu via verified supply chain",
+      "state": 2,
+      "distributorId": 40,
+      "syncedAt": "2025-12-23T14:26:55.997Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?coconut%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Tamil Nadu",
+          "timestamp": "2025-12-23T14:26:52.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "2b240b1080465cf97b35fb8046b4f594e195c35c88d8c7677548de7b6bd14a63"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T16:26:52.000Z",
+          "description": "Product received and verified",
+          "previousHash": "2b240b1080465cf97b35fb8046b4f594e195c35c88d8c7677548de7b6bd14a63",
+          "hash": "4765b3233393b59765b77da3f06ee52eb0d7e34a1ebc882fcf044e803f432caa"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-24T00:26:52.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "4765b3233393b59765b77da3f06ee52eb0d7e34a1ebc882fcf044e803f432caa",
+          "hash": "31a66bc0dc78c915937f545a91bfef9bb7b9b5497b67a2ea3bc50e8548b8e5e9"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-23T15:05:19.279Z"
+    },
+    "49": {
+      "id": 49,
+      "name": "Peanut",
+      "origin": "Uttarpradesh",
+      "batch": "UT-PEANUT-2025-LIY",
+      "harvestDate": "23 Dec 2025",
+      "description": "Peanut sourced from Uttarpradesh via verified supply chain",
+      "state": 2,
+      "distributorId": 41,
+      "syncedAt": "2025-12-23T15:07:05.745Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?peanut%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Uttarpradesh",
+          "timestamp": "2025-12-23T15:07:00.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "e25d3ca86ab558d567902a48811fb6ac03d1b05d0c7f902ca22eb67c896d0f4d"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-23T17:07:00.000Z",
+          "description": "Product received and verified",
+          "previousHash": "e25d3ca86ab558d567902a48811fb6ac03d1b05d0c7f902ca22eb67c896d0f4d",
+          "hash": "bf709ff112ce534c987d6ec9dfa114d5e0a5acd3658a72aa97c3d723478c8f46"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-24T01:07:00.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "bf709ff112ce534c987d6ec9dfa114d5e0a5acd3658a72aa97c3d723478c8f46",
+          "hash": "48a25edf20be321c4efa75a2a202b2bca2704eff10ef0d3bd06e46dbfc58b66a"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "50": {
+      "id": 50,
+      "name": "Wheat",
+      "origin": "vellore",
+      "batch": "VE-WHEAT-2025-5XE",
+      "harvestDate": "26 Dec 2025",
+      "description": "Wheat sourced from vellore via verified supply chain",
+      "state": 1,
+      "distributorId": 42,
+      "syncedAt": "2025-12-26T02:11:07.066Z",
+      "scanCount": 0,
+      "image": "https://source.unsplash.com/800x600/?wheat%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "vellore",
+          "timestamp": "2025-12-26T02:10:59.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "ac1d96f2712082158c9e7095c2da7d11613df53f44b5873deb2bd8b841c317a0"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-26T04:10:59.000Z",
+          "description": "Product received and verified",
+          "previousHash": "ac1d96f2712082158c9e7095c2da7d11613df53f44b5873deb2bd8b841c317a0",
+          "hash": "9e45800cd3473faf6839fcd4aaf5284ea6bba72fcc196f6e5fef45e4a3da398d"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-26T12:10:59.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "9e45800cd3473faf6839fcd4aaf5284ea6bba72fcc196f6e5fef45e4a3da398d",
+          "hash": "40a0790c5fe8e55be040b497f1f4be59bd11293b6685bdf49dac482c5d0c9e99"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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"
+    },
+    "51": {
+      "id": 51,
+      "name": "Whey Protein",
+      "origin": "Russia",
+      "batch": "RU-WHEYPROTEIN-2025-G1T",
+      "harvestDate": "26 Dec 2025",
+      "description": "Whey Protein sourced from Russia via verified supply chain",
+      "state": 2,
+      "distributorId": 43,
+      "syncedAt": "2025-12-26T03:36:06.667Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?whey%20protein%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Russia",
+          "timestamp": "2025-12-26T03:35:39.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "1aa9c20cea5db3b21828013c2a872c14d0e5fa1bda218f25461c80e69cb04abd"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-26T05:35:39.000Z",
+          "description": "Product received and verified",
+          "previousHash": "1aa9c20cea5db3b21828013c2a872c14d0e5fa1bda218f25461c80e69cb04abd",
+          "hash": "598eb0516365ab67ee9ecabbdaaa0e662516cb878a390041a65c31ed44d8ee71"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-26T13:35:39.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "598eb0516365ab67ee9ecabbdaaa0e662516cb878a390041a65c31ed44d8ee71",
+          "hash": "aaed087f6b71d1b2860cc5c344b4bbf371fac75213c14ff39d2a0f0362f0d835"
+        }
+      ],
+      "qrCode": "data:image/png;base64,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",
+      "lastScanned": "2025-12-26T05:33:50.668Z"
+    },
+    "52": {
+      "id": 52,
+      "name": "corn flour",
+      "origin": "Andhra Pradesh",
+      "batch": "AN-CORNFLOUR-2025-QSF",
+      "harvestDate": "28 Dec 2025",
+      "description": "corn flour sourced from Andhra Pradesh via verified supply chain",
+      "state": 2,
+      "distributorId": 44,
+      "syncedAt": "2025-12-28T15:26:09.564Z",
+      "scanCount": 2,
+      "image": "https://source.unsplash.com/800x600/?corn%20flour%20fresh%20natural%20high%20quality%20real%20photo",
+      "journey": [
+        {
+          "role": "Farmer",
+          "location": "Andhra Pradesh",
+          "timestamp": "2025-12-28T15:26:06.000Z",
+          "description": "Product harvested and registered",
+          "previousHash": "0",
+          "hash": "4a8e6d493ebd5ccb9b3dc5d66dac7cc5bf85d49267fd6bd0e09e3e28b04124dd"
+        },
+        {
+          "role": "Distributor",
+          "location": "Distribution Center",
+          "timestamp": "2025-12-28T17:26:06.000Z",
+          "description": "Product received and verified",
+          "previousHash": "4a8e6d493ebd5ccb9b3dc5d66dac7cc5bf85d49267fd6bd0e09e3e28b04124dd",
+          "hash": "aa6e52519cca7946a9f5a0afab0c8de9e5f33399addc93850d96a74934153bcf"
+        },
+        {
+          "role": "Retailer",
+          "location": "Retail Store",
+          "timestamp": "2025-12-29T01:26:06.000Z",
+          "description": "Product ready for consumer purchase",
+          "previousHash": "aa6e52519cca7946a9f5a0afab0c8de9e5f33399addc93850d96a74934153bcf",
+          "hash": "b236a1d02edc32c72070fb0bb614abe1f159bcc301d9b63ad50b8da99849fc77"
+        }
+      ],
+      "qrCode": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAYAAAB5fY51AAAAAklEQVR4AewaftIAAAjHSURBVO3BwZEbSRAEwcgy6K9y3krQ+2gOB8UL9/QHkrTAIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSHPyAJ/7K2/CYJN9pyIwknbTlJwtPacpKEk7acJOGkLSdJeFJbfpOEf1lbbgyStMQgSUsMkrTEIElLDJK0xCBJSwyStMSHv6At3ywJt9pykoSTJLypLTeScKstJ0k4actJEk7aciMJT2vLN0vCkwZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDF0jCk9rytracJOGkLSdJOEnCSVtOknDSlqe15SQJN5Jw0paTtrwtCU9qy5sGSVpikKQlBklaYpCkJQZJWmKQpCUGSVrig/6IJDwpCSdtuZGEpyXhRltutOUkCfpugyQtMUjSEoMkLTFI0hKDJC0xSNISgyQt8UFfoS0nSThJwklbbrTlVlue1JYnJeFGW3RnkKQlBklaYpCkJQZJWmKQpCUGSVpikKQlPnyBtvzfJeFJSThpy40kPK0tJ0k4acuNtpwk4W1t+ZcNkrTEIElLDJK0xCBJSwyStMQgSUsMkrTEh78gCf93bTlJwklbTpJw0paTJJy05VZbTpKgsyT8nw2StMQgSUsMkrTEIElLDJK0xCBJSwyStET6A11LwklbvlkS3taWkyQ8qS0nSThpi541SNISgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQt8eEPSMJJW56UhJO2nCTh2yXhpC032nIjCbeScNKWkyQ8qS03kvDt2nIjCSdtuTFI0hKDJC0xSNISgyQtMUjSEoMkLTFI0hLpD16WhBtt2S4JJ225kYS3teVNSfh2bTlJwklbbiThRlueNEjSEoMkLTFI0hKDJC0xSNISgyQtMUjSEh/+giS8KQk32vKbJJy05aQtJ0m40ZYbSThpy2+ScNKWJ7XlJAk32nKShFttOUnCk9rypkGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlvjwF7Tlm7XlVltOkvDNknDSlpMkfLsk3GjLdm15UhJO2nJjkKQlBklaYpCkJQZJWmKQpCUGSVpikKQl0h98uSRs15YnJeFJbXlaEp7Ulm+XhJO2nCThRltOknCjLTcGSVpikKQlBklaYpCkJQZJWmKQpCUGSVriwx+QhJO2nCThpC1vSsJ2bXlSEt7WlhtJuNGWW205ScJJW06S8KS2PGmQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+/AVJuJGEG205ScJJW36ThBtJuNGWG0k4acutttxIwjdLwklbbrXlJAlPasubBklaYpCkJQZJWmKQpCUGSVpikKQlBkla4sNf0JYbSXhSW06S8Ju2nCThpC1PSsJJW2605TdJOGnLk5LwpiTcastJW06ScCMJN9pyY5CkJQZJWmKQpCUGSVpikKQlBklaYpCkJT78BUm40ZYnJeHbJeGkLU9KwtOS8Ka2nCThRlt+k4STJNxoy5Pa8qRBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJD39AW24k4UYSbrTlJAm32vLNkvC0tpwk4aQtN9ry7dpykoSTttxIwjcbJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJ9AdfLgknbTlJwo22/CYJJ235Zkn4dm05ScKb2vK0JDypLd9skKQlBklaYpCkJQZJWmKQpCUGSVpikKQl0h9cSsJJW24k4UZb3paEG225kYQbbXlaEk7aciMJ27XlJAknbXlSEk7acmOQpCUGSVpikKQlBklaYpCkJQZJWmKQpCU+/APacpKEp7XlpC03knDSlicl4WltuZGEG225kYSTtvwmCU9KwklbTpLwpkGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlkh/cCkJb2rLSRJO2nKShN+05SQJJ215UxJO2rJdEp7Ulqcl4aQtN5Jw0pY3DZK0xCBJSwyStMQgSUsMkrTEIElLDJK0RPqDL5eEN7XlbUk4actJEk7acpKEk7a8LQk32nKShKe15UYS3tSWJw2StMQgSUsMkrTEIElLDJK0xCBJSwyStET6g5cl4U1tuZWEk7acJOGkLU9KwtvaciMJb2rL05Jw0pY3JeGkLTcGSVpikKQlBklaYpCkJQZJWmKQpCUGSVoi/cGlJNxoy0kSTtpykoQbbbmVhJO23EjCSVveloSTtjwpCSdtuZGE7dryzQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWiL9ga4l4aQtb0rC29pykoSTtnyzJJy05WlJOGnLSRJO2vKmQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiQ9/QBL+ZW25lYR/WVt+k4Q3JeGkLW9LwklbbiThRhJO2vKkQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKW+PAXtOWbJeFWW06ScNKWkySctOVGEk7a8rS23EjCSVtOknDSlqe15UltuZGENw2StMQgSUsMkrTEIElLDJK0xCBJSwyStMSHL5CEJ7XlaUm4kYSTttxIwo0knLTlN205ScKTknDSliclYbu2nCThpC03BklaYpCkJQZJWmKQpCUGSVpikKQlBkla4oP+iLacJOFGEm605UlJ+E1bbrTlJAknbTlJwpPa8psknLTlJAknSXhSW540SNISgyQtMUjSEoMkLTFI0hKDJC0xSNISH/RXtOUkCSdtOUnCSRJutOVpbTlJwklbtmvLm9ryzQZJWmKQpCUGSVpikKQlBklaYpCkJQZJWuLDF2jLvy4JN5LwzdrymyTcaMuNJLwpCb9py422/MsGSVpikKQlBklaYpCkJQZJWmKQpCUGSVriw1+QhH9dEm605U1JOEnCSVtuteUkCSdt2S4JT2rLk5Jw0pYbgyQtMUjSEoMkLTFI0hKDJC0xSNISgyQtkf5AkhYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpiUGSlhgkaYlBkpYYJGmJQZKWGCRpif8AnrjnXT5YzKEAAAAASUVORK5CYII=",
+      "lastScanned": "2025-12-28T15:37:50.081Z"
+    }
+  },
+  "nextProductId": 53,
+  "distributorToConsumerMap": {
+    "11": 39,
+    "12": 42,
+    "13": 44,
+    "14": 11,
+    "15": 12,
+    "16": 13,
+    "17": 14,
+    "18": 15,
+    "19": 16,
+    "20": 36,
+    "21": 17,
+    "22": 18,
+    "23": 27,
+    "24": 28,
+    "25": 29,
+    "26": 30,
+    "27": 31,
+    "28": 32,
+    "29": 33,
+    "30": 34,
+    "31": 35,
+    "32": 37,
+    "33": 38,
+    "34": 40,
+    "35": 41,
+    "36": 43,
+    "37": 45,
+    "38": 46,
+    "39": 47,
+    "40": 48,
+    "41": 49,
+    "42": 50,
+    "43": 51,
+    "44": 52,
+    "1019": 19,
+    "1021": 20,
+    "1023": 21,
+    "1025": 22,
+    "1027": 23,
+    "1029": 24,
+    "1031": 25,
+    "1033": 26
+  }
+}
