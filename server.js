@@ -198,7 +198,7 @@ app.post('/api/products/sync', async (req, res) => {
     console.log('🔐 Hash chain verification:', verification.message);
 
     // ===================== CHANGED: QR now encodes a direct URL for universal scanning =====================
-    const publicUrl = `http://localhost:3000/product/${consumerProductId}`;   // ← REPLACE with your actual deployed domain
+    const publicUrl = `https://supply-chain-qr.onrender.com/product/${consumerProductId}`;  // ← REPLACE with your actual deployed domain
     const qrCodeUrl = await QRCode.toDataURL(publicUrl, { width: 300, margin: 2 });
     consumerProduct.qrCode = qrCodeUrl;
 
