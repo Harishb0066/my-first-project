@@ -213,7 +213,6 @@ app.post('/api/products/sync', async (req, res) => {
     console.log('🔐 Hash chain verification:', verification.message);
 
     // 🔴 FIXED: Updated to correct current Render domain
-    // CORRECT - Must point to your current Render app
     const publicUrl = `https://harish-supply-chain.onrender.com/product/${consumerProductId}`;
     
     const qrCodeUrl = await QRCode.toDataURL(publicUrl, { width: 300, margin: 2 });
@@ -280,6 +279,18 @@ app.get('/api/products/:id', (req, res) => {
   });
 });
 
+// Serve static files (for images, css, etc. if you add any later)
+app.use(express.static(__dirname));
+
+// Serve the QR dashboard as the main page
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Optional: If you want a separate admin dashboard route
+// app.get('/dashboard', (req, res) => {
+//   res.sendFile(path.join(__dirname, 'index.html'));
+// });
 app.get('/api/qrcode/:id', (req, res) => {
   loadDatabase();
   const product = consumerProducts[req.params.id];
