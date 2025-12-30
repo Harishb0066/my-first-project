@@ -212,7 +212,10 @@ app.post('/api/products/sync', async (req, res) => {
     const verification = verifyHashChain(consumerProduct.journey);
     console.log('🔐 Hash chain verification:', verification.message);
 
-    const publicUrl = `https://supply-chain-qr.onrender.com/product/${consumerProductId}`;
+    // 🔴 FIXED: Updated to correct current Render domain
+    // CORRECT - Must point to your current Render app
+    const publicUrl = `https://harish-supply-chain.onrender.com/product/${consumerProductId}`;
+    
     const qrCodeUrl = await QRCode.toDataURL(publicUrl, { width: 300, margin: 2 });
     consumerProduct.qrCode = qrCodeUrl;
 
@@ -236,6 +239,8 @@ app.post('/api/products/sync', async (req, res) => {
     res.status(500).json({ error: 'Failed to sync product', details: error.message });
   }
 });
+
+// ... (rest of your code remains EXACTLY the same - no changes below this line)
 
 app.get('/api/products', (req, res) => {
   loadDatabase();
@@ -472,7 +477,6 @@ function analyzeProduct(product) {
 }
 
 const PORT = process.env.PORT || 3000;
-// Reset endpoint for development
 // Reset endpoint for development
 app.post('/api/reset', (req, res) => {
   consumerProducts = {};
