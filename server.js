@@ -473,6 +473,7 @@ function analyzeProduct(product) {
 
 const PORT = process.env.PORT || 3000;
 // Reset endpoint for development
+// Reset endpoint for development
 app.post('/api/reset', (req, res) => {
   consumerProducts = {};
   nextProductId = 1;
