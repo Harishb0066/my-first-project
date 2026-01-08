@@ -2,9 +2,9 @@ class TaskManager:
     def __init__(self):
         self.tasks = []
     
-    def add_task(self, task):
-        self.tasks.append({"task": task, "completed": False})
-        print(f"✓ Task added: {task}")
+    def add_task(self, task, priority="Normal"):
+        self.tasks.append({"task": task, "completed": False, "priority": priority})
+        print(f"✓ Task added: {task} [Priority: {priority}]")
     
     def view_tasks(self):
         if not self.tasks:
@@ -13,7 +13,8 @@ class TaskManager:
         print("\n--- Your Tasks ---")
         for i, task in enumerate(self.tasks, 1):
             status = "✓" if task["completed"] else "✗"
-            print(f"{i}. [{status}] {task['task']}")
+            priority = task.get("priority", "Normal")
+            print(f"{i}. [{status}] {task['task']} - Priority: {priority}")
     
     def complete_task(self, task_number):
         if 0 < task_number <= len(self.tasks):
@@ -44,7 +45,8 @@ def main():
         
         if choice == "1":
             task = input("Enter task: ")
-            manager.add_task(task)
+            priority = input("Enter priority (High/Normal/Low): ")
+            manager.add_task(task, priority)
         elif choice == "2":
             manager.view_tasks()
         elif choice == "3":
