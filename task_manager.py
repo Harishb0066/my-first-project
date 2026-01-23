@@ -2,7 +2,7 @@
 
 #static values
 
-a=10
+a=15
 b=5
 
 #operations
@@ -22,4 +22,5 @@ print("Addition:",addition)
 print("Subtractio:",subtraction)
 print("Multiplication:",multiplication)
 print("Division:",division)
+
 
