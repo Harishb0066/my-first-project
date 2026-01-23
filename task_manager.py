@@ -20,5 +20,6 @@ print("A =",a)
 print("B =",b)
 print("Addition:",addition)
 print("Subtractio:",subtraction)
-print("Multiplication:',multiplication)
+print("Multiplication:",multiplication)
 print("Division:",division)
+
